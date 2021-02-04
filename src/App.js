@@ -15,8 +15,8 @@ function App() {
 						<a href="mailto:neil@sesbs.co.uk" className="font-bold text-xl">
 							neil@sesbs.co.uk
 						</a>
-						<a href="tel:+4401772" className="font-bold text-xl">
-							01772 000000
+						<a href="tel:+447976754849" className="font-bold text-xl">
+							07976754849
 						</a>
 					</div>
 					<img src={logo} alt="SESBS Logo" width="180px" height="78px" className="pb-8" />
