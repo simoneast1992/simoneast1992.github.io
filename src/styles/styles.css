@@ -2,3 +2,17 @@
     background-image: linear-gradient(135deg, #fafafa 25%, #ffffff 25%, #ffffff 50%, #fafafa 50%, #fafafa 75%, #ffffff 75%, #ffffff 100%);
     background-size: 56.57px 56.57px;
 }
+
+.custom-main {
+    background-color: #f8f8f8;
+    background-image: url("data:image/svg+xml,%3Csvg width='63' height='66' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ffffff' fill-opacity='0.48'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h3, h4, h5, h6, label, input[type='button'] {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+}
