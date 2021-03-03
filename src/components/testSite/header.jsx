@@ -7,16 +7,20 @@ import logo from '../../images/logo-no-bg.png';
 class Header extends React.Component {
     render() {
         return (
-            <header className="w-screen h-screen flex items-center justify-center relative tracking-wide">
-                <section className="w-1/3">
-                    <img src={logo} alt="SES Logo" width="300" className="mb-8" />
-                    <h1 className="text-9xl mb-8">Building Services</h1>
-                    <h2 className="text-4xl text-gray-400 mb-12">All your building service needs...</h2>
-                </section>
-
-                <HeaderForm/>
-                <div className="absolute w-full h-24 bg-white bottom-0 flex items-center justify-center">
-                    <img src={arrow} alt="Arrow down" width="64px" height="64px" className="transform rotate-90 -mt-24 cursor-pointer hover:scale-110 transition duration-300 ease-in-out" />
+            <header className="w-full h-screen flex items-center justify-center tracking-wide relative z-10">
+                <div className="w-1/2 h-screen flex items-center justify-center p-10">
+                    <div className="w-min h-auto flex items-start justify-center flex-col">
+                        <img src={logo} alt="SES Logo" width="300" className="mb-8" />
+                        <h1 className="text-9xl mb-8 text-gray-800">{this.props.title}</h1>
+                        <h2 className="text-3xl text-gray-600">{this.props.subtitle}</h2>
+                    </div>
+                </div>
+                <div className="w-1/2 h-screen flex items-center justify-center bg-red-500 relative">
+                    {this.props.children}
+                    <HeaderForm/>
+                </div>
+                <div className="absolute w-24 h-24 rounded-full bg-white left-12 bottom-12 flex items-center justify-center cursor-pointer hover:scale-110 transform transition duration-300 ease-in-out">
+                    <img src={arrow} alt="Arrow down" width="48px" height="48px" className="transform rotate-90" />
                 </div>
             </header>
         )

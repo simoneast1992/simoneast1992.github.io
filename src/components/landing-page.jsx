@@ -20,7 +20,7 @@ class LandingPage extends React.Component {
 
 
     handleSubmit(){
-        if (this.state.password === 'ses-password-123') {
+        if (this.state.password === '123') {
             this.setState({testSite: !this.state.testSite})
         }
     }

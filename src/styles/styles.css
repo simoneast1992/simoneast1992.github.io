@@ -9,10 +9,36 @@
 }
 
 * {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-h1, h3, h4, h5, h6, label, input[type='button'] {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 900;
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+}
+
+h1, h3, h4, h5, h6, input[type='button'], .montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.w-512px {
+    width: 512px;
+}
+
+.section-inner {
+    width: calc(100% - 4rem);
+    max-width: 1600px;
+    padding: 8rem 0;
+}
+
+.section-inner-half {
+    width: 50%;
+}
+
+.gallery {
+    padding-block-start: 25%;
 }
