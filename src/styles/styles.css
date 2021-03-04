@@ -32,6 +32,7 @@ main {
     animation-name: start-page;
     animation-duration: 3s;
     animation-iteration-count: 1;
+    animation-delay: 2s;
 }
 
 h1, h3, h5, h6, input[type='button'], .montserrat {
