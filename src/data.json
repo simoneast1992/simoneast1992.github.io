@@ -1,0 +1,30 @@
+{
+    "header": {
+        "title": "Building Services Simplified",
+        "subtitle": "With over 40 years in business, we have all the experience you need to get the job done."
+    },
+
+    "about": {
+        "title": "About Us",
+        "text1": "At SES Elec Ltd (formerly Security and Electrical Services Ltd), we specialise in Electrical Installations and Testing of fixed Electrical Installations, Maintenance, Electric Charging Units, Security Access Control Systems, Full Office Refurbishments and Full Laboratory Refurbishments. Established in 1988 we undertake individual contracts and planned maintenance programmes.",
+        "text2": "The success of the company is supported by long-term employment relationships with operational and skileld staff along with stable partnerships with cub-contractors, suppliers and clients.",
+        "text3": "We have carried out work for a number of companies nationwide including; Emcor, Apleona, United Utilities, Electricity North West (ENW), British Telecomm, Diocese of Blackburn Property Commission and Salford City College. We have carried out works for these companies at Major Office Complexes, Commercial Sites, Industrial Sites, Laboratories and Colleges."
+    },
+
+    "qualified": {
+        "title": "Qualified",
+        "text": "With over 40 years' experience, a team of fully qualified personnel, and a wide range of qualified sub-contractors, we are happy to listen to any job, big or small, that you might need. Get in touch by phone, email or by using the contact form on this page and we will reply as quickly as possible."
+    },
+
+    "work": {
+        "title": "Our Work",
+        "text": "At SES Elec Ltd we do a wide variety of jobs ranging from full laboratory refurbishments to something as simple as changing a light switch. Most recently we have been focused on delivering top quality work at the laboratories for United Utilities. These laboratories are complex and include many specialist instruments and equipment which require a lot of care and we pride ourselves on delivering the best quality refurbishment we can. We have enjoyed a very positive working relationship with United Utilities over the last 22 years and we hope this continues."
+    },
+
+    "footer": {
+        "title": "Get in touch",
+        "text": "If you have any queries or questions however big or small don't hesitate to get in touch by phone, email or using the contact form. We will get back to you as soon as possible.",
+        "phone": "070976 754849",
+        "email": "neil@sesbs.co.uk"
+    }
+}

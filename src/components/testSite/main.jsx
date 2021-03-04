@@ -8,15 +8,17 @@ import Work from './work';
 import Clients from './clients';
 import Footer from './footer';
 
+import data from '../../data.json';
+
 class Main extends React.Component {
 	render() {
 		return (
-			<main className="custom-main w-full h-auto min-h-screen overflow-x-hidden">
+			<main className="w-full h-auto min-h-screen overflow-x-hidden">
 				<Header
-					title="Building Services Simplified"
-					subtitle="With over 40 years in business, we have all the experience you need to get the job done."
+					title={data.header.title}
+					subtitle={data.header.subtitle}
 				>
-					<Nav background="red"/>
+					<Nav color="white"/>
 				</Header>
 				<Section>
 					<Nav />

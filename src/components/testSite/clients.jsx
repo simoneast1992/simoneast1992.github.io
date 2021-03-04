@@ -6,7 +6,7 @@ import united from '../../images/united-utilities.svg';
 class Clients extends React.Component {
     render() {
         return (
-            <div className="w-full h-auto flex items-center justify-center bg-red-500">
+            <div className="w-full h-auto flex items-center justify-center red-section" id="clients">
                 <div className="section-inner">
                     {/* <h3 className="text-6xl text-white mb-12">Clients</h3> */}
                     <div className="w-full h-auto flex justify-center items-center">
