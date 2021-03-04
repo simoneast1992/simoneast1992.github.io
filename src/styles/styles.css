@@ -17,8 +17,21 @@ body {
     overflow-x: hidden;
 }
 
+@keyframes start-page {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 main {
     width: 100%;
+    animation-name: start-page;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
 }
 
 h1, h3, h5, h6, input[type='button'], .montserrat {
