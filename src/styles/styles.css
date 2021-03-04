@@ -29,6 +29,7 @@ body {
 
 main {
     width: 100%;
+    opacity: 0;
     animation-name: start-page;
     animation-duration: 3s;
     animation-iteration-count: 1;
