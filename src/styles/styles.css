@@ -37,7 +37,7 @@ main {
     animation-delay: 2s;
 }
 
-h1, h3, h5, h6, input[type='button'], .montserrat {
+h1, h3, h5, h6, button, .montserrat {
     font-family: 'Montserrat', sans-serif;
 }
 
