@@ -26,6 +26,7 @@ class Footer extends React.Component {
                     </div>
                     <div className="section-inner-half flex flex-col items-end justify-between">
                         <img src={logo} alt="SES Logo" width="300" />
+                        <span className="mt-auto mb-8 text-lg text-white">{data.footer.vat}</span>
                         <span className="flex">
                             <a href="#">
                                 <div className="p-4 mr-4 montserrat bg-gray-700 w-min rounded-xl hover:bg-white hover:text-gray-800 transition duration-300 ease-in-out">
