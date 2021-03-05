@@ -77,6 +77,11 @@ class Work extends React.Component {
         }
     }
 
+    componentDidMount = () => {
+        this.setState({currentGallery: 2});
+        this.setState({currentGallery: 1});
+    }
+
     handleLabGallery = () => {
         this.setState({currentGallery: 1});
     }
