@@ -21,7 +21,7 @@ class HeaderForm extends React.Component {
                 <label className="text-md mb-2 text-gray-600" for="form-message">Message<span className="text-red-500">*</span></label>
                 <textarea className="mb-6 h-36 py-2 px-3 bg-gray-100 outline-none focus:bg-gray-100 text-gray-500 resize-none" name="message" id="form-message" required />
 
-                <input className="w-1/2 p-2 bg-red-500 text-xl text-white absolute -bottom-8 left-1/4 h-16 rounded-xl shadow-lg cursor-pointer hover:bg-red-600 outline-none transform hover:scale-105 transition duration-300 ease-in-out" type="button" value="Submit"/>
+                <input className="w-1/2 p-2 bg-red-500 text-xl text-white absolute -bottom-8 left-1/4 h-16 rounded-xl shadow-lg cursor-pointer hover:bg-red-600 outline-none transform hover:scale-105 transition duration-300 ease-in-out" type="submit" value="Submit"/>
             </form>
         )
     }
