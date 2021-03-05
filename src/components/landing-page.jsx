@@ -1,5 +1,6 @@
 import React from 'react';
 import Main from './testSite/main';
+import Loading from './testSite/loading';
 
 import logo from '../images/ses-w-b.png';
 
@@ -29,7 +30,10 @@ class LandingPage extends React.Component {
 
         return (
             this.state.testSite ? (
-                <Main/>
+                <>
+                    <Loading />
+                    <Main />
+                </>
             ) : (
                 <div className="w-screen h-screen subpixel-antialiased flex justify-center items-center flex-col p-8 custom-bg">
                     <div className="w-full max-w-max p-16 pb-8 bg-white rounded-xl relative">
