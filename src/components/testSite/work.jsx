@@ -99,7 +99,7 @@ class Work extends React.Component {
             <>
                 <div className="w-full h-auto flex items-center justify-center" id="work">
                     <div class="section-inner">
-                        <h3 className="text-6xl text-gray-800 mb-12">{data.work.title}</h3>
+                        <h3 className="text-6xl text-gray-800 mb-12 laptop-m:text-5xl">{data.work.title}</h3>
                         <p className="text-lg text-gray-600">
                             {data.work.text}
                         </p>
@@ -107,9 +107,9 @@ class Work extends React.Component {
                 </div>
                 <div className="w-full h-auto flex">
                     <div className="gallery w-1/4 h-auto gallery-lab relative" onClick={this.handleLabGallery}>
-                        <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-40 flex items-center justify-center flex-col">
-                            <h3 className="text-white mb-4 text-3xl">Laboratory Refurbishments</h3>
-                            <h4 className="text-white text-xl uppercase tracking-widest">{this.state.currentGallery === 1 ? 'Viewing' : 'View More'}</h4>
+                        <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-40 flex items-center justify-center flex-col p-4">
+                            <h3 className="text-white mb-4 text-3xl text-center laptop-m:text-2xl">Laboratory Refurbishments</h3>
+                            <h4 className="text-white text-xl uppercase tracking-widest laptop-m:text-lg">{this.state.currentGallery === 1 ? 'Viewing' : 'View More'}</h4>
                             {this.state.currentGallery === 1 ?
                                 <span className="gallery-triangle absolute bottom-0" />
                                 : null
@@ -117,9 +117,9 @@ class Work extends React.Component {
                         </div>
                     </div>
                     <div className="gallery w-1/4 h-auto gallery-office relative" onClick={this.handleOfficeGallery}>
-                        <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-40 flex items-center justify-center flex-col">
-                            <h3 className="text-white mb-4 text-3xl">Office Refurbishments</h3>
-                            <h4 className="text-white text-xl uppercase tracking-widest">{this.state.currentGallery === 2 ? 'Viewing' : 'View More'}</h4>
+                        <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-40 flex items-center justify-center flex-col p-4">
+                            <h3 className="text-white mb-4 text-3xl text-center laptop-m:text-2xl">Office Refurbishments</h3>
+                            <h4 className="text-white text-xl uppercase tracking-widest laptop-m:text-lg">{this.state.currentGallery === 2 ? 'Viewing' : 'View More'}</h4>
                             {this.state.currentGallery === 2 ?
                                 <span className="gallery-triangle absolute bottom-0" />
                                 : null
@@ -127,9 +127,9 @@ class Work extends React.Component {
                         </div>
                     </div>
                     <div className="gallery w-1/4 h-auto gallery-elec relative pointer-events-none">
-                        <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-80 flex items-center justify-center flex-col">
-                            <h3 className="text-white mb-4 text-3xl">Electrical Installations</h3>
-                            <h4 className="text-white text-xl uppercase tracking-widest">{this.state.currentGallery === 3 ? 'Viewing' : 'Coming Soon'}</h4>
+                        <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-80 flex items-center justify-center flex-col p-4">
+                            <h3 className="text-white mb-4 text-3xl text-center laptop-m:text-2xl">Electrical Installations</h3>
+                            <h4 className="text-white text-xl uppercase tracking-widest laptop-m:text-lg">{this.state.currentGallery === 3 ? 'Viewing' : 'Coming Soon'}</h4>
                             {this.state.currentGallery === 3 ?
                                 <span className="gallery-triangle absolute bottom-0" />
                                 : null
@@ -137,9 +137,9 @@ class Work extends React.Component {
                         </div>
                     </div>
                     <div className="gallery w-1/4 h-auto gallery-misc relative pointer-events-none">
-                        <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-80 flex items-center justify-center flex-col">
-                            <h3 className="text-white mb-4 text-3xl">Miscellaneous Jobs</h3>
-                            <h4 className="text-white text-xl uppercase tracking-widest">{this.state.currentGallery === 4 ? 'Viewing' : 'Coming Soon'}</h4>
+                        <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-80 flex items-center justify-center flex-col p-4">
+                            <h3 className="text-white mb-4 text-3xl text-center laptop-m:text-2xl">Miscellaneous Jobs</h3>
+                            <h4 className="text-white text-xl uppercase tracking-widest laptop-m:text-lg">{this.state.currentGallery === 4 ? 'Viewing' : 'Coming Soon'}</h4>
                             {this.state.currentGallery === 4 ?
                                 <span className="gallery-triangle absolute bottom-0" />
                                 : null
@@ -149,7 +149,7 @@ class Work extends React.Component {
                 </div>
                 {this.state.currentGallery === 1 ?
                     <div className="w-full h-auto flex items-center justify-center">
-                        <div className="flex items-center justify-center flex-col">
+                        <div className="flex items-center justify-center flex-col w-full">
                             <div className="section-inner padding-bottom-0">
                                 <h3 className="text-4xl text-gray-800 mb-12">G09 - Laboratory Refurbishment</h3>
                                 <p className="text-lg text-gray-600 mb-12">
@@ -227,7 +227,7 @@ class Work extends React.Component {
                 : null}
                 {this.state.currentGallery === 2 ?
                     <div className="w-full h-auto flex items-center justify-center">
-                        <div className="flex items-center justify-center flex-col">
+                        <div className="flex items-center justify-center flex-col w-full">
                             <div className="section-inner padding-bottom-0">
                                 <h3 className="text-4xl text-gray-800 mb-12">Uclan Whitehaven - Office Refurbishment</h3>
                                 <p className="text-lg text-gray-600 mb-12">
@@ -280,7 +280,7 @@ class Work extends React.Component {
                 : null}
                 {this.state.currentGallery === 3 ?
                     <div className="w-full h-auto flex items-center justify-center">
-                        <div className="flex items-center justify-center flex-col">
+                        <div className="flex items-center justify-center flex-col w-full">
                             <div className="section-inner padding-bottom-0">
                                 <h3 className="text-4xl text-gray-800 mb-12">G060 - Elec Refurbishment</h3>
                                 <p className="text-lg text-gray-600 mb-12">
@@ -308,7 +308,7 @@ class Work extends React.Component {
                 : null}
                 {this.state.currentGallery === 4 ?
                     <div className="w-full h-auto flex items-center justify-center">
-                        <div className="flex items-center justify-center flex-col">
+                        <div className="flex items-center justify-center flex-col w-full">
                             <div className="section-inner padding-bottom-0">
                                 <h3 className="text-4xl text-gray-800 mb-12">G09 - Misc Refurbishment</h3>
                                 <p className="text-lg text-gray-600 mb-12">

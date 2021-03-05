@@ -9,13 +9,13 @@ class Footer extends React.Component {
             <div className="w-full h-auto flex items-center justify-center bg-gray-800 text-white">
                 <div className="section-inner flex items-stretch">
                     <div className="section-inner-half">
-                        <h3 className="text-6xl mb-12">{data.footer.title}</h3>
+                        <h3 className="text-6xl mb-12 laptop-m:text-5xl">{data.footer.title}</h3>
                         <p className="text-lg text-white">
                             {data.footer.text}
                             <br/><br/>
-                            <span className="montserrat mb-4">Phone<span className="text-xl ml-4">{data.footer.phone}</span></span>
+                            <span className="montserrat mb-4">Phone<span className="ml-4">{data.footer.phone}</span></span>
                             <br/>
-                            <span className="montserrat">Email<span className="text-xl ml-4">{data.footer.email}</span></span>
+                            <span className="montserrat">Email<span className="ml-4">{data.footer.email}</span></span>
                             <br/><br/>
                             <a href="#">
                                 <div className="p-4 montserrat bg-gray-700 w-min rounded-xl hover:bg-white hover:text-gray-800 transition duration-300 ease-in-out">
@@ -26,7 +26,8 @@ class Footer extends React.Component {
                     </div>
                     <div className="section-inner-half flex flex-col items-end justify-between">
                         <img src={logo} alt="SES Logo" width="300" />
-                        <span className="mt-auto mb-8 text-lg text-white">{data.footer.vat}</span>
+                        <span className="montserrat mt-auto text-lg">Vat Number<span className="ml-4">{data.footer.vat}</span></span>
+                        <span className="montserrat mb-8 text-lg">Company Number<span className="ml-4">{data.footer.company}</span></span>
                         <span className="flex">
                             <a href="#">
                                 <div className="p-4 mr-4 montserrat bg-gray-700 w-min rounded-xl hover:bg-white hover:text-gray-800 transition duration-300 ease-in-out">
@@ -46,6 +47,7 @@ class Footer extends React.Component {
                         </span>
                     </div>
                 </div>
+
             </div>
         )
     }

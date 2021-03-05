@@ -7,9 +7,9 @@ class Qualified extends React.Component {
     render() {
         return (
             <div className="w-full h-auto flex items-center justify-center red-section">
-                <div className="section-inner flex items-start">
+                <div className="section-inner flex items-center">
                     <div className="section-inner-half">
-                        <h3 className="text-6xl text-white mb-12">{data.qualified.title}</h3>
+                        <h3 className="text-6xl text-white mb-12 laptop-m:text-5xl">{data.qualified.title}</h3>
                         <p className="text-lg text-white">
                             {data.qualified.text}
                         </p>
