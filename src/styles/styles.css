@@ -69,6 +69,12 @@ h1, h3, h5, h6, button, .montserrat {
     width: 50%;
 }
 
+.section-inner-small {
+    width: 100%;
+    max-width: 1600px;
+    padding: 2rem 8rem;
+}
+
 .padding-bottom-0 {
     padding-bottom: 0;
 }
@@ -140,6 +146,14 @@ h1, h3, h5, h6, button, .montserrat {
 
 .utilities-logo {
     width: 220px;
+}
+
+.has-logo {
+    width: 100px;
+}
+
+.nic-logo {
+    width: 200px;
 }
 
 .footer-logo {
@@ -247,6 +261,14 @@ h1, h3, h5, h6, button, .montserrat {
 
     .utilities-logo {
         width: 161px;
+    }
+
+    .has-logo {
+        width: 60px;
+    }
+
+    .nic-logo {
+        width: 120px;
     }
 
     .footer-logo {

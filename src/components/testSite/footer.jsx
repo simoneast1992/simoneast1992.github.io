@@ -21,7 +21,7 @@ class Footer extends React.Component {
                                 <span className="montserrat">Email<span className="ml-4">{data.footer.email}</span></span>
                             </a>
                             <br/><br/>
-                            <a href="#">
+                            <a href="#form">
                                 <div className="p-4 montserrat bg-gray-700 w-min rounded-xl hover:bg-white hover:text-gray-800 transition duration-300 ease-in-out mobile-l:mb-12 mobile-l:text-sm">
                                     Contact&nbsp;Form
                                 </div>
@@ -34,7 +34,7 @@ class Footer extends React.Component {
                         <span className="montserrat mb-8 text-lg">Company Number<span className="ml-4">{data.footer.company}</span></span>
                         <span className="flex">
                             <a href="#">
-                                <div className="p-4 mr-4 montserrat bg-gray-700 w-min rounded-xl hover:bg-white hover:text-gray-800 transition duration-300 ease-in-out mobile-l:text-sm">
+                                <div className="p-4 montserrat bg-gray-700 w-min rounded-xl hover:bg-white hover:text-gray-800 transition duration-300 ease-in-out mobile-l:text-sm">
                                     Privacy&nbsp;Policy
                                 </div>
                             </a>

@@ -23,7 +23,7 @@ class MobileNav extends React.Component {
     render() {
         return (
             <>
-                <div className="hidden tablet-portrait:flex w-20 h-20 top-0 right-0 fixed items-center justify-center z-30 p-4" onClick={this.handleMobileNavOpen}>
+                <div className="hidden tablet-portrait:flex w-20 h-20 top-0 right-0 fixed items-center justify-center z-50 p-4" onClick={this.handleMobileNavOpen}>
                     <div className="menu-icon bg-gray-800 flex flex-col justify-around items-center py-3">
                         <span />
                         <span />
@@ -31,7 +31,7 @@ class MobileNav extends React.Component {
                     </div>
                 </div>
                 {this.state.mobileNavOpen ?
-                    <div className="fixed h-full w-screen p-8 flex flex-col items-center justify-center z-40 red-section">
+                    <div className="fixed h-full w-screen p-8 flex flex-col items-center justify-center z-50 red-section">
                         <div className="close-button w-20 h-20 p-4 top-0 right-0 fixed flex items-center justify-center" onClick={this.handleMobileNavClose}>
                             <div className="close-icon bg-gray-800  relative">
                                 <span className="transform rotate-45 absolute"/>

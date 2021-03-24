@@ -7,6 +7,7 @@ import About from './about';
 import Qualified from './qualified';
 import Work from './work';
 import Clients from './clients';
+import Accreditations from './accreditations';
 import Footer from './footer';
 
 import data from '../../data.json';
@@ -29,6 +30,7 @@ class Main extends React.Component {
 					<Work />
 					<Clients />
 					<Footer />
+					<Accreditations />
 				</Section>
 			</main>
 		)

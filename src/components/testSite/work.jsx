@@ -93,7 +93,218 @@ class Work extends React.Component {
         this.setState({currentGallery: 4});
     }
 
+    gallery1() {
+        return (
+            this.state.currentGallery === 1 ?
+                <div className="w-full h-auto flex items-center justify-center">
+                    <div className="flex items-center justify-center flex-col w-full px-16 tablet-portrait:px-0">
+                        <div className="section-inner padding-bottom-0">
+                            <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G09 - Laboratory Refurbishment</h3>
+                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
+                                <img src={g09a} alt="United Utilities G09" />
+                                <img src={g09b} alt="United Utilities G09" />
+                                <img src={g09c} alt="United Utilities G09" />
+                            </div>
+                        </div>
+                        <div className="section-inner padding-bottom-0">
+                            <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G040 - Laboratory Refurbishment</h3>
+                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
+                                <img src={g040a} alt="United Utilities G040" />
+                                <img src={g040b} alt="United Utilities G040" />
+                                <img src={g040c} alt="United Utilities G040" />
+                                <img src={g040d} alt="United Utilities G040" />
+                                <img src={g040e} alt="United Utilities G040" />
+                                <img src={g040f} alt="United Utilities G040" />
+                            </div>
+                        </div>
+                        <div className="section-inner padding-bottom-0">
+                            <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G048 - Laboratory Refurbishment</h3>
+                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
+                                <img src={g048a} alt="United Utilities G048" />
+                                <img src={g048b} alt="United Utilities G048" />
+                                <img src={g048c} alt="United Utilities G048" />
+                                <img src={g048d} alt="United Utilities G048" />
+                                <img src={g048e} alt="United Utilities G048" />
+                                <img src={g048f} alt="United Utilities G048" />
+                            </div>
+                        </div>
+                        <div className="section-inner padding-bottom-0">
+                            <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G060 - Laboratory Refurbishment</h3>
+                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
+                                <img src={g060a} alt="United Utilities G060" />
+                                <img src={g060b} alt="United Utilities G060" />
+                                <img src={g060c} alt="United Utilities G060" />
+                                {/* <img src={g060d} alt="United Utilities G060" /> */}
+                                <img src={g060e} alt="United Utilities G060" />
+                                <img src={g060f} alt="United Utilities G060" />
+                                {/* <img src={g060g} alt="United Utilities G060" /> */}
+                                <img src={g060h} alt="United Utilities G060" />
+                                {/* <img src={g060i} alt="United Utilities G060" /> */}
+                                <img src={g060j} alt="United Utilities G060" />
+                                {/* <img src={g060k} alt="United Utilities G060" /> */}
+                                <img src={g060l} alt="United Utilities G060" />
+                                <img src={g060m} alt="United Utilities G060" />
+                            </div>
+                        </div>
+                        <div className="section-inner">
+                            <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G090 - Laboratory Refurbishment</h3>
+                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
+                                <img src={g090a} alt="United Utilities G090" />
+                                <img src={g090b} alt="United Utilities G090" />
+                                {/* <img src={g090c} alt="United Utilities G090" /> */}
+                                <img src={g090d} alt="United Utilities G090" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            : null
+        )
+    }
+
+    gallery2() {
+        return (
+            this.state.currentGallery === 2 ?
+                <div className="w-full h-auto flex items-center justify-center">
+                    <div className="flex items-center justify-center flex-col w-full">
+                        <div className="section-inner padding-bottom-0">
+                            <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">Uclan Whitehaven - Office Refurbishment</h3>
+                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
+                                <img src={uclana} alt="Uclan Whitehaven Office Refurbishment" />
+                                <img src={uclanb} alt="Uclan Whitehaven Office Refurbishment" />
+                                <img src={uclanc} alt="Uclan Whitehaven Office Refurbishment" />
+                                <img src={ucland} alt="Uclan Whitehaven Office Refurbishment" />
+                                <img src={uclane} alt="Uclan Whitehaven Office Refurbishment" />
+                                <img src={uclanf} alt="Uclan Whitehaven Office Refurbishment" />
+                                <img src={uclang} alt="Uclan Whitehaven Office Refurbishment" />
+                                <img src={uclanh} alt="Uclan Whitehaven Office Refurbishment" />
+                                <img src={uclani} alt="Uclan Whitehaven Office Refurbishment" />
+                            </div>
+                        </div>
+                        <div className="section-inner padding-bottom-0">
+                            <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">Stowe - Office Refurbishment</h3>
+                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
+                                <img src={stowea} alt="Stowe Office Refurbishment" />
+                                {/* <img src={stoweb} alt="Stowe Office Refurbishment" /> */}
+                                <img src={stowec} alt="Stowe Office Refurbishment" />
+                                <img src={stowed} alt="Stowe Office Refurbishment" />
+                                <img src={stowee} alt="Stowe Office Refurbishment" />
+                                <img src={stowef} alt="Stowe Office Refurbishment" />
+                                <img src={stoweg} alt="Stowe Office Refurbishment" />
+                            </div>
+                        </div>
+                        <div className="section-inner">
+                            <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">Glazed Screens - Office Refurbishment</h3>
+                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
+                                <img src={glazeda} alt="Glazed Screens Office Refurbishment" />
+                                {/* <img src={glazedb} alt="Glazed Screens Office Refurbishment" /> */}
+                                {/* <img src={glazedc} alt="Glazed Screens Office Refurbishment" /> */}
+                                <img src={glazedd} alt="Glazed Screens Office Refurbishment" />
+                                {/* <img src={glazede} alt="Glazed Screens Office Refurbishment" /> */}
+                                <img src={glazedf} alt="Glazed Screens Office Refurbishment" />
+                                {/* <img src={glazedg} alt="Glazed Screens Office Refurbishment" /> */}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            : null
+        )
+    }
+
+    gallery3() {
+        return (
+            this.state.currentGallery === 3 ?
+                <div className="w-full h-auto flex items-center justify-center">
+                    <div className="flex items-center justify-center flex-col w-full">
+                        <div className="section-inner padding-bottom-0">
+                            <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G060 - Elec Refurbishment</h3>
+                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
+                                <img src={g09a} alt="United Utilities G09" />
+                                <img src={g09b} alt="United Utilities G09" />
+                                <img src={g09c} alt="United Utilities G09" />
+                            </div>
+                        </div>
+                        <div className="section-inner">
+                            <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G090 - Laboratory Refurbishment</h3>
+                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
+                                <img src={g09a} alt="United Utilities G09" />
+                                <img src={g09b} alt="United Utilities G09" />
+                                <img src={g09c} alt="United Utilities G09" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            : null
+        )
+    }
+
+    gallery4() {
+        return (
+            this.state.currentGallery === 4 ?
+                <div className="w-full h-auto flex items-center justify-center">
+                    <div className="flex items-center justify-center flex-col w-full">
+                        <div className="section-inner padding-bottom-0">
+                            <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G09 - Misc Refurbishment</h3>
+                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
+                                <img src={g09a} alt="United Utilities G09" />
+                                <img src={g09b} alt="United Utilities G09" />
+                                <img src={g09c} alt="United Utilities G09" />
+                            </div>
+                        </div>
+                        <div className="section-inner">
+                            <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G09 - Laboratory Refurbishment</h3>
+                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
+                                <img src={g09a} alt="United Utilities G09" />
+                                <img src={g09b} alt="United Utilities G09" />
+                                <img src={g09c} alt="United Utilities G09" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            : null
+        )
+    }
     render() {
+
+        const gallery1 = this.gallery1();
+        const gallery2 = this.gallery2();
+        const gallery3 = this.gallery3();
+        const gallery4 = this.gallery4();
 
         return (
             <>
@@ -106,7 +317,7 @@ class Work extends React.Component {
                     </div>
                 </div>
                 <div className="w-full h-auto flex mobile-l:flex-col">
-                    <div className="gallery w-1/4 mobile-l:w-full h-auto gallery-lab relative" onClick={this.handleLabGallery}>
+                    <a className="gallery w-1/4 mobile-l:w-full h-auto gallery-lab relative" onClick={this.handleLabGallery} href="#gallery1" id="gallery1">
                         <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-40 flex items-center justify-center flex-col p-4">
                             <h3 className="text-white mb-4 text-3xl text-center laptop-m:text-2xl laptop-xs:text-xl tablet-portrait:text-base">Laboratory Refurbishments</h3>
                             <h4 className="text-white text-xl uppercase tracking-widest laptop-m:text-lg tablet-portrait:text-base">{this.state.currentGallery === 1 ? 'Viewing' : 'View More'}</h4>
@@ -115,8 +326,11 @@ class Work extends React.Component {
                                 : null
                             }
                         </div>
-                    </div>
-                    <div className="gallery w-1/4 mobile-l:w-full h-auto gallery-office relative" onClick={this.handleOfficeGallery}>
+                    </a>
+                    <span className="hidden mobile-l:block">
+                        {gallery1}
+                    </span>
+                    <a className="gallery w-1/4 mobile-l:w-full h-auto gallery-office relative" onClick={this.handleOfficeGallery} href="#gallery2" id="gallery2">
                         <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-40 flex items-center justify-center flex-col p-4">
                             <h3 className="text-white mb-4 text-3xl text-center laptop-m:text-2xl laptop-xs:text-xl tablet-portrait:text-base">Office Refurbishments</h3>
                             <h4 className="text-white text-xl uppercase tracking-widest laptop-m:text-lg tablet-portrait:text-base">{this.state.currentGallery === 2 ? 'Viewing' : 'View More'}</h4>
@@ -125,8 +339,11 @@ class Work extends React.Component {
                                 : null
                             }
                         </div>
-                    </div>
-                    <div className="gallery w-1/4 mobile-l:w-full h-auto gallery-elec relative pointer-events-none">
+                    </a>
+                    <span className="hidden mobile-l:block">
+                        {gallery2}
+                    </span>
+                    <a className="gallery w-1/4 mobile-l:w-full h-auto gallery-elec relative pointer-events-none" href="#gallery3" id="gallery3">
                         <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-80 flex items-center justify-center flex-col p-4">
                             <h3 className="text-white mb-4 text-3xl text-center laptop-m:text-2xl laptop-xs:text-xl tablet-portrait:text-base">Electrical Installations</h3>
                             <h4 className="text-white text-xl uppercase tracking-widest laptop-m:text-lg tablet-portrait:text-base">{this.state.currentGallery === 3 ? 'Viewing' : 'Coming Soon'}</h4>
@@ -135,8 +352,11 @@ class Work extends React.Component {
                                 : null
                             }
                         </div>
-                    </div>
-                    <div className="gallery w-1/4 mobile-l:w-full h-auto gallery-misc relative pointer-events-none">
+                    </a>
+                    <span className="hidden mobile-l:block">
+                        {gallery3}
+                    </span>
+                    <a className="gallery w-1/4 mobile-l:w-full h-auto gallery-misc relative pointer-events-none" href="#gallery4" id="gallery4">
                         <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-80 flex items-center justify-center flex-col p-4">
                             <h3 className="text-white mb-4 text-3xl text-center laptop-m:text-2xl laptop-xs:text-xl tablet-portrait:text-base">Miscellaneous Jobs</h3>
                             <h4 className="text-white text-xl uppercase tracking-widest laptop-m:text-lg tablet-portrait:text-base">{this.state.currentGallery === 4 ? 'Viewing' : 'Coming Soon'}</h4>
@@ -145,195 +365,23 @@ class Work extends React.Component {
                                 : null
                             }
                         </div>
-                    </div>
+                    </a>
+                    <span className="hidden mobile-l:block">
+                        {gallery4}
+                    </span>
                 </div>
-                {this.state.currentGallery === 1 ?
-                    <div className="w-full h-auto flex items-center justify-center">
-                        <div className="flex items-center justify-center flex-col w-full px-16 tablet-portrait:px-0">
-                            <div className="section-inner padding-bottom-0">
-                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G09 - Laboratory Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
-                                    <img src={g09a} alt="United Utilities G09" />
-                                    <img src={g09b} alt="United Utilities G09" />
-                                    <img src={g09c} alt="United Utilities G09" />
-                                </div>
-                            </div>
-                            <div className="section-inner padding-bottom-0">
-                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G040 - Laboratory Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
-                                    <img src={g040a} alt="United Utilities G040" />
-                                    <img src={g040b} alt="United Utilities G040" />
-                                    <img src={g040c} alt="United Utilities G040" />
-                                    <img src={g040d} alt="United Utilities G040" />
-                                    <img src={g040e} alt="United Utilities G040" />
-                                    <img src={g040f} alt="United Utilities G040" />
-                                </div>
-                            </div>
-                            <div className="section-inner padding-bottom-0">
-                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G048 - Laboratory Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
-                                    <img src={g048a} alt="United Utilities G048" />
-                                    <img src={g048b} alt="United Utilities G048" />
-                                    <img src={g048c} alt="United Utilities G048" />
-                                    <img src={g048d} alt="United Utilities G048" />
-                                    <img src={g048e} alt="United Utilities G048" />
-                                    <img src={g048f} alt="United Utilities G048" />
-                                </div>
-                            </div>
-                            <div className="section-inner padding-bottom-0">
-                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G060 - Laboratory Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
-                                    <img src={g060a} alt="United Utilities G060" />
-                                    <img src={g060b} alt="United Utilities G060" />
-                                    <img src={g060c} alt="United Utilities G060" />
-                                    {/* <img src={g060d} alt="United Utilities G060" /> */}
-                                    <img src={g060e} alt="United Utilities G060" />
-                                    <img src={g060f} alt="United Utilities G060" />
-                                    {/* <img src={g060g} alt="United Utilities G060" /> */}
-                                    <img src={g060h} alt="United Utilities G060" />
-                                    {/* <img src={g060i} alt="United Utilities G060" /> */}
-                                    <img src={g060j} alt="United Utilities G060" />
-                                    {/* <img src={g060k} alt="United Utilities G060" /> */}
-                                    <img src={g060l} alt="United Utilities G060" />
-                                    <img src={g060m} alt="United Utilities G060" />
-                                </div>
-                            </div>
-                            <div className="section-inner">
-                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G090 - Laboratory Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
-                                    <img src={g090a} alt="United Utilities G090" />
-                                    <img src={g090b} alt="United Utilities G090" />
-                                    {/* <img src={g090c} alt="United Utilities G090" /> */}
-                                    <img src={g090d} alt="United Utilities G090" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                : null}
-                {this.state.currentGallery === 2 ?
-                    <div className="w-full h-auto flex items-center justify-center">
-                        <div className="flex items-center justify-center flex-col w-full">
-                            <div className="section-inner padding-bottom-0">
-                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">Uclan Whitehaven - Office Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
-                                    <img src={uclana} alt="Uclan Whitehaven Office Refurbishment" />
-                                    <img src={uclanb} alt="Uclan Whitehaven Office Refurbishment" />
-                                    <img src={uclanc} alt="Uclan Whitehaven Office Refurbishment" />
-                                    <img src={ucland} alt="Uclan Whitehaven Office Refurbishment" />
-                                    <img src={uclane} alt="Uclan Whitehaven Office Refurbishment" />
-                                    <img src={uclanf} alt="Uclan Whitehaven Office Refurbishment" />
-                                    <img src={uclang} alt="Uclan Whitehaven Office Refurbishment" />
-                                    <img src={uclanh} alt="Uclan Whitehaven Office Refurbishment" />
-                                    <img src={uclani} alt="Uclan Whitehaven Office Refurbishment" />
-                                </div>
-                            </div>
-                            <div className="section-inner padding-bottom-0">
-                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">Stowe - Office Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
-                                    <img src={stowea} alt="Stowe Office Refurbishment" />
-                                    {/* <img src={stoweb} alt="Stowe Office Refurbishment" /> */}
-                                    <img src={stowec} alt="Stowe Office Refurbishment" />
-                                    <img src={stowed} alt="Stowe Office Refurbishment" />
-                                    <img src={stowee} alt="Stowe Office Refurbishment" />
-                                    <img src={stowef} alt="Stowe Office Refurbishment" />
-                                    <img src={stoweg} alt="Stowe Office Refurbishment" />
-                                </div>
-                            </div>
-                            <div className="section-inner">
-                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">Glazed Screens - Office Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
-                                    <img src={glazeda} alt="Glazed Screens Office Refurbishment" />
-                                    {/* <img src={glazedb} alt="Glazed Screens Office Refurbishment" /> */}
-                                    {/* <img src={glazedc} alt="Glazed Screens Office Refurbishment" /> */}
-                                    <img src={glazedd} alt="Glazed Screens Office Refurbishment" />
-                                    {/* <img src={glazede} alt="Glazed Screens Office Refurbishment" /> */}
-                                    <img src={glazedf} alt="Glazed Screens Office Refurbishment" />
-                                    {/* <img src={glazedg} alt="Glazed Screens Office Refurbishment" /> */}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                : null}
-                {this.state.currentGallery === 3 ?
-                    <div className="w-full h-auto flex items-center justify-center">
-                        <div className="flex items-center justify-center flex-col w-full">
-                            <div className="section-inner padding-bottom-0">
-                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G060 - Elec Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
-                                    <img src={g09a} alt="United Utilities G09" />
-                                    <img src={g09b} alt="United Utilities G09" />
-                                    <img src={g09c} alt="United Utilities G09" />
-                                </div>
-                            </div>
-                            <div className="section-inner">
-                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G090 - Laboratory Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
-                                    <img src={g09a} alt="United Utilities G09" />
-                                    <img src={g09b} alt="United Utilities G09" />
-                                    <img src={g09c} alt="United Utilities G09" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                : null}
-                {this.state.currentGallery === 4 ?
-                    <div className="w-full h-auto flex items-center justify-center">
-                        <div className="flex items-center justify-center flex-col w-full">
-                            <div className="section-inner padding-bottom-0">
-                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G09 - Misc Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
-                                    <img src={g09a} alt="United Utilities G09" />
-                                    <img src={g09b} alt="United Utilities G09" />
-                                    <img src={g09c} alt="United Utilities G09" />
-                                </div>
-                            </div>
-                            <div className="section-inner">
-                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G09 - Laboratory Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
-                                    <img src={g09a} alt="United Utilities G09" />
-                                    <img src={g09b} alt="United Utilities G09" />
-                                    <img src={g09c} alt="United Utilities G09" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                : null}
+                <span className="mobile-l:hidden">
+                    {gallery1}
+                </span>
+                <span className="mobile-l:hidden">
+                    {gallery2}
+                </span>
+                <span className="mobile-l:hidden">
+                    {gallery3}
+                </span>
+                <span className="mobile-l:hidden">
+                    {gallery4}
+                </span>
             </>
         )
     }

@@ -7,7 +7,7 @@ import logo from '../../images/logo-no-bg.png';
 class Header extends React.Component {
     render() {
         return (
-            <header className="header w-full flex items-stretch justify-center relative brick-bg z-20 tablet-portrait:flex-col">
+            <header className="header w-full flex items-stretch justify-center relative brick-bg tablet-portrait:flex-col z-40">
                 <div className="w-1/2 tablet-portrait:w-full flex items-center justify-center p-10 tablet-portrait:py-16 mobile-l:p-8">
                     <div className="w-min tablet-portrait:w-3/4 mobile-l:w-full h-auto flex items-start justify-center flex-col">
                         <img src={logo} alt="SES Logo" className="mb-8 header-logo" />
@@ -15,7 +15,7 @@ class Header extends React.Component {
                         <h2 className="text-3xl text-gray-600 laptop-m:text-2xl laptop-s:text-xl ipad-landscape:text-lg tablet-portrait:text-2xl iphone-x:text-xl">{this.props.subtitle}</h2>
                     </div>
                 </div>
-                <div className="header-form-wrapper w-1/2 tablet-portrait:w-full flex items-center justify-center relative tablet-portrait:p-16 mobile-l:p-8 mobile-l:pb-16">
+                <div className="header-form-wrapper w-1/2 tablet-portrait:w-full flex items-center justify-center relative tablet-portrait:p-16 mobile-l:p-8 mobile-l:pb-16" id="form">
                     {this.props.children}
                     <HeaderForm/>
                 </div>
