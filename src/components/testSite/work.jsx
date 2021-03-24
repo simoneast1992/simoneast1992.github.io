@@ -97,49 +97,49 @@ class Work extends React.Component {
 
         return (
             <>
-                <div className="w-full h-auto flex items-center justify-center" id="work">
+                <div className="w-full h-auto flex items-center justify-center px-16 tablet-portrait:px-0" id="work">
                     <div class="section-inner">
-                        <h3 className="text-6xl text-gray-800 mb-12 laptop-m:text-5xl">{data.work.title}</h3>
+                        <h3 className="text-6xl text-gray-800 mb-12 laptop-m:text-5xl iphone-x:text-4xl">{data.work.title}</h3>
                         <p className="text-lg text-gray-600">
                             {data.work.text}
                         </p>
                     </div>
                 </div>
-                <div className="w-full h-auto flex">
-                    <div className="gallery w-1/4 h-auto gallery-lab relative" onClick={this.handleLabGallery}>
+                <div className="w-full h-auto flex mobile-l:flex-col">
+                    <div className="gallery w-1/4 mobile-l:w-full h-auto gallery-lab relative" onClick={this.handleLabGallery}>
                         <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-40 flex items-center justify-center flex-col p-4">
-                            <h3 className="text-white mb-4 text-3xl text-center laptop-m:text-2xl">Laboratory Refurbishments</h3>
-                            <h4 className="text-white text-xl uppercase tracking-widest laptop-m:text-lg">{this.state.currentGallery === 1 ? 'Viewing' : 'View More'}</h4>
+                            <h3 className="text-white mb-4 text-3xl text-center laptop-m:text-2xl laptop-xs:text-xl tablet-portrait:text-base">Laboratory Refurbishments</h3>
+                            <h4 className="text-white text-xl uppercase tracking-widest laptop-m:text-lg tablet-portrait:text-base">{this.state.currentGallery === 1 ? 'Viewing' : 'View More'}</h4>
                             {this.state.currentGallery === 1 ?
                                 <span className="gallery-triangle absolute bottom-0" />
                                 : null
                             }
                         </div>
                     </div>
-                    <div className="gallery w-1/4 h-auto gallery-office relative" onClick={this.handleOfficeGallery}>
+                    <div className="gallery w-1/4 mobile-l:w-full h-auto gallery-office relative" onClick={this.handleOfficeGallery}>
                         <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-40 flex items-center justify-center flex-col p-4">
-                            <h3 className="text-white mb-4 text-3xl text-center laptop-m:text-2xl">Office Refurbishments</h3>
-                            <h4 className="text-white text-xl uppercase tracking-widest laptop-m:text-lg">{this.state.currentGallery === 2 ? 'Viewing' : 'View More'}</h4>
+                            <h3 className="text-white mb-4 text-3xl text-center laptop-m:text-2xl laptop-xs:text-xl tablet-portrait:text-base">Office Refurbishments</h3>
+                            <h4 className="text-white text-xl uppercase tracking-widest laptop-m:text-lg tablet-portrait:text-base">{this.state.currentGallery === 2 ? 'Viewing' : 'View More'}</h4>
                             {this.state.currentGallery === 2 ?
                                 <span className="gallery-triangle absolute bottom-0" />
                                 : null
                             }
                         </div>
                     </div>
-                    <div className="gallery w-1/4 h-auto gallery-elec relative pointer-events-none">
+                    <div className="gallery w-1/4 mobile-l:w-full h-auto gallery-elec relative pointer-events-none">
                         <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-80 flex items-center justify-center flex-col p-4">
-                            <h3 className="text-white mb-4 text-3xl text-center laptop-m:text-2xl">Electrical Installations</h3>
-                            <h4 className="text-white text-xl uppercase tracking-widest laptop-m:text-lg">{this.state.currentGallery === 3 ? 'Viewing' : 'Coming Soon'}</h4>
+                            <h3 className="text-white mb-4 text-3xl text-center laptop-m:text-2xl laptop-xs:text-xl tablet-portrait:text-base">Electrical Installations</h3>
+                            <h4 className="text-white text-xl uppercase tracking-widest laptop-m:text-lg tablet-portrait:text-base">{this.state.currentGallery === 3 ? 'Viewing' : 'Coming Soon'}</h4>
                             {this.state.currentGallery === 3 ?
                                 <span className="gallery-triangle absolute bottom-0" />
                                 : null
                             }
                         </div>
                     </div>
-                    <div className="gallery w-1/4 h-auto gallery-misc relative pointer-events-none">
+                    <div className="gallery w-1/4 mobile-l:w-full h-auto gallery-misc relative pointer-events-none">
                         <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-80 flex items-center justify-center flex-col p-4">
-                            <h3 className="text-white mb-4 text-3xl text-center laptop-m:text-2xl">Miscellaneous Jobs</h3>
-                            <h4 className="text-white text-xl uppercase tracking-widest laptop-m:text-lg">{this.state.currentGallery === 4 ? 'Viewing' : 'Coming Soon'}</h4>
+                            <h3 className="text-white mb-4 text-3xl text-center laptop-m:text-2xl laptop-xs:text-xl tablet-portrait:text-base">Miscellaneous Jobs</h3>
+                            <h4 className="text-white text-xl uppercase tracking-widest laptop-m:text-lg tablet-portrait:text-base">{this.state.currentGallery === 4 ? 'Viewing' : 'Coming Soon'}</h4>
                             {this.state.currentGallery === 4 ?
                                 <span className="gallery-triangle absolute bottom-0" />
                                 : null
@@ -149,24 +149,24 @@ class Work extends React.Component {
                 </div>
                 {this.state.currentGallery === 1 ?
                     <div className="w-full h-auto flex items-center justify-center">
-                        <div className="flex items-center justify-center flex-col w-full">
+                        <div className="flex items-center justify-center flex-col w-full px-16 tablet-portrait:px-0">
                             <div className="section-inner padding-bottom-0">
-                                <h3 className="text-4xl text-gray-800 mb-12">G09 - Laboratory Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12">
+                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G09 - Laboratory Refurbishment</h3>
+                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6">
+                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
                                     <img src={g09a} alt="United Utilities G09" />
                                     <img src={g09b} alt="United Utilities G09" />
                                     <img src={g09c} alt="United Utilities G09" />
                                 </div>
                             </div>
                             <div className="section-inner padding-bottom-0">
-                                <h3 className="text-4xl text-gray-800 mb-12">G040 - Laboratory Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12">
+                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G040 - Laboratory Refurbishment</h3>
+                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6">
+                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
                                     <img src={g040a} alt="United Utilities G040" />
                                     <img src={g040b} alt="United Utilities G040" />
                                     <img src={g040c} alt="United Utilities G040" />
@@ -176,11 +176,11 @@ class Work extends React.Component {
                                 </div>
                             </div>
                             <div className="section-inner padding-bottom-0">
-                                <h3 className="text-4xl text-gray-800 mb-12">G048 - Laboratory Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12">
+                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G048 - Laboratory Refurbishment</h3>
+                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6">
+                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
                                     <img src={g048a} alt="United Utilities G048" />
                                     <img src={g048b} alt="United Utilities G048" />
                                     <img src={g048c} alt="United Utilities G048" />
@@ -190,11 +190,11 @@ class Work extends React.Component {
                                 </div>
                             </div>
                             <div className="section-inner padding-bottom-0">
-                                <h3 className="text-4xl text-gray-800 mb-12">G060 - Laboratory Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12">
+                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G060 - Laboratory Refurbishment</h3>
+                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6">
+                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
                                     <img src={g060a} alt="United Utilities G060" />
                                     <img src={g060b} alt="United Utilities G060" />
                                     <img src={g060c} alt="United Utilities G060" />
@@ -211,11 +211,11 @@ class Work extends React.Component {
                                 </div>
                             </div>
                             <div className="section-inner">
-                                <h3 className="text-4xl text-gray-800 mb-12">G090 - Laboratory Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12">
+                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G090 - Laboratory Refurbishment</h3>
+                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6">
+                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
                                     <img src={g090a} alt="United Utilities G090" />
                                     <img src={g090b} alt="United Utilities G090" />
                                     {/* <img src={g090c} alt="United Utilities G090" /> */}
@@ -229,11 +229,11 @@ class Work extends React.Component {
                     <div className="w-full h-auto flex items-center justify-center">
                         <div className="flex items-center justify-center flex-col w-full">
                             <div className="section-inner padding-bottom-0">
-                                <h3 className="text-4xl text-gray-800 mb-12">Uclan Whitehaven - Office Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12">
+                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">Uclan Whitehaven - Office Refurbishment</h3>
+                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6">
+                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
                                     <img src={uclana} alt="Uclan Whitehaven Office Refurbishment" />
                                     <img src={uclanb} alt="Uclan Whitehaven Office Refurbishment" />
                                     <img src={uclanc} alt="Uclan Whitehaven Office Refurbishment" />
@@ -246,11 +246,11 @@ class Work extends React.Component {
                                 </div>
                             </div>
                             <div className="section-inner padding-bottom-0">
-                                <h3 className="text-4xl text-gray-800 mb-12">Stowe - Office Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12">
+                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">Stowe - Office Refurbishment</h3>
+                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6">
+                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
                                     <img src={stowea} alt="Stowe Office Refurbishment" />
                                     {/* <img src={stoweb} alt="Stowe Office Refurbishment" /> */}
                                     <img src={stowec} alt="Stowe Office Refurbishment" />
@@ -261,11 +261,11 @@ class Work extends React.Component {
                                 </div>
                             </div>
                             <div className="section-inner">
-                                <h3 className="text-4xl text-gray-800 mb-12">Glazed Screens - Office Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12">
+                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">Glazed Screens - Office Refurbishment</h3>
+                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6">
+                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
                                     <img src={glazeda} alt="Glazed Screens Office Refurbishment" />
                                     {/* <img src={glazedb} alt="Glazed Screens Office Refurbishment" /> */}
                                     {/* <img src={glazedc} alt="Glazed Screens Office Refurbishment" /> */}
@@ -282,22 +282,22 @@ class Work extends React.Component {
                     <div className="w-full h-auto flex items-center justify-center">
                         <div className="flex items-center justify-center flex-col w-full">
                             <div className="section-inner padding-bottom-0">
-                                <h3 className="text-4xl text-gray-800 mb-12">G060 - Elec Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12">
+                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G060 - Elec Refurbishment</h3>
+                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6">
+                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
                                     <img src={g09a} alt="United Utilities G09" />
                                     <img src={g09b} alt="United Utilities G09" />
                                     <img src={g09c} alt="United Utilities G09" />
                                 </div>
                             </div>
                             <div className="section-inner">
-                                <h3 className="text-4xl text-gray-800 mb-12">G090 - Laboratory Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12">
+                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G090 - Laboratory Refurbishment</h3>
+                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6">
+                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
                                     <img src={g09a} alt="United Utilities G09" />
                                     <img src={g09b} alt="United Utilities G09" />
                                     <img src={g09c} alt="United Utilities G09" />
@@ -310,22 +310,22 @@ class Work extends React.Component {
                     <div className="w-full h-auto flex items-center justify-center">
                         <div className="flex items-center justify-center flex-col w-full">
                             <div className="section-inner padding-bottom-0">
-                                <h3 className="text-4xl text-gray-800 mb-12">G09 - Misc Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12">
+                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G09 - Misc Refurbishment</h3>
+                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6">
+                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
                                     <img src={g09a} alt="United Utilities G09" />
                                     <img src={g09b} alt="United Utilities G09" />
                                     <img src={g09c} alt="United Utilities G09" />
                                 </div>
                             </div>
                             <div className="section-inner">
-                                <h3 className="text-4xl text-gray-800 mb-12">G09 - Laboratory Refurbishment</h3>
-                                <p className="text-lg text-gray-600 mb-12">
+                                <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G09 - Laboratory Refurbishment</h3>
+                                <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </p>
-                                <div className="w-full h-auto grid grid-cols-3 gap-6">
+                                <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
                                     <img src={g09a} alt="United Utilities G09" />
                                     <img src={g09b} alt="United Utilities G09" />
                                     <img src={g09c} alt="United Utilities G09" />

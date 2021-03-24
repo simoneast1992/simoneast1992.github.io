@@ -35,16 +35,20 @@ main {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-delay: 2s;
+    position: relative;
 }
 
 h1, h3, h5, h6, button, .montserrat {
     font-family: 'Montserrat', sans-serif;
 }
 
+.header {
+    height: 100vh;
+}
+
 .header-form {
     width: 512px;
 }
-
 
 .red-section {
     background-color: #ef4444;
@@ -52,9 +56,13 @@ h1, h3, h5, h6, button, .montserrat {
 }
 
 .section-inner {
-    width: calc(100% - 8rem);
+    width: 100%;
     max-width: 1600px;
-    padding: 8rem 0;
+    padding: 8rem;
+}
+
+.section-inner.padding-bottom-0 {
+    padding-bottom: 0 !important;
 }
 
 .section-inner-half {
@@ -122,6 +130,22 @@ h1, h3, h5, h6, button, .montserrat {
     animation-iteration-count: infinite;
 }
 
+.forty-logo {
+    width: 270px;
+}
+
+.emcor-logo {
+    width: 300px;
+}
+
+.utilities-logo {
+    width: 220px;
+}
+
+.footer-logo {
+    width: 300px;
+}
+
 @keyframes background {
     0% {
         background-image: url(../images/lab.jpg);
@@ -146,9 +170,23 @@ h1, h3, h5, h6, button, .montserrat {
     }
 }
 
+@media only screen and (max-width: 1920px) {
+    .header-form {
+        width: 450px;
+    }
+}
+
 @media only screen and (max-width: 1680px) {
     .section-inner {
         max-width: 1400px;
+    }
+
+    .header {
+        min-height: 40vw;
+    }
+
+    .header-form {
+        width: 400px;
     }
 }
 
@@ -162,12 +200,8 @@ h1, h3, h5, h6, button, .montserrat {
         padding-bottom: 0;
     }
 
-    .header-form {
-        width: 400px;
-    }
-
-    .header-title.header-title {
-        font-size: 5rem;
+    .header {
+        min-height: 55vw;
     }
 
     .header-logo {
@@ -187,5 +221,99 @@ h1, h3, h5, h6, button, .montserrat {
     .down-arrow {
         width: 2rem;
         height: 2rem;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .header {
+        height: auto;
+    }
+
+    .gallery-triangle {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 20px 20px 20px;
+        border-color: transparent transparent #ffffff transparent;
+    }
+
+    .forty-logo {
+        width: 200px;
+    }
+
+    .emcor-logo {
+        width: 200px;
+    }
+
+    .utilities-logo {
+        width: 161px;
+    }
+
+    .footer-logo {
+        width: 200px;
+    }
+
+    .section-inner {
+        padding: 4rem 3rem;
+    }
+
+    .menu-icon, .close-icon {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    .menu-icon span {
+        width: 40%;
+        height: 3px;
+        background: white;
+    }
+
+    .close-icon span {
+        width: 40%;
+        height: 3px;
+        background: white;
+        top: 22px;
+        left: 14px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header-logo {
+        width: 150px;
+    }
+
+    .section-inner {
+        padding: 4rem 2rem;
+    }
+
+    .section-inner-half {
+        width: 100%;
+    }
+
+    .emcor-logo {
+        width: 180px;
+    }
+
+    .utilities-logo {
+        width: 132px;
+    }
+
+    .gallery {
+        padding-block-start: 45%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .emcor-logo {
+        width: 120px;
+    }
+
+    .utilities-logo {
+        width: 88px;
+    }
+
+    .section-inner {
+        padding: 3rem 1.5rem;
     }
 }

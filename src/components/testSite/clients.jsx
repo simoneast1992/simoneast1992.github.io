@@ -8,10 +8,9 @@ class Clients extends React.Component {
         return (
             <div className="w-full h-auto flex items-center justify-center red-section" id="clients">
                 <div className="section-inner">
-                    {/* <h3 className="text-6xl text-white mb-12">Clients</h3> */}
                     <div className="w-full h-auto flex justify-center items-center">
-                        <img src={emcor} alt="Emcor Logo" width="300" className="mr-20" />
-                        <img src={united} alt="United Utilities Logo" width="220" />
+                        <img src={emcor} alt="Emcor Logo" className="mr-20 emcor-logo mobile-l:mr-8 iphone-x:mr-4" />
+                        <img src={united} alt="United Utilities Logo" className="utilities-logo" />
                     </div>
                 </div>
             </div>

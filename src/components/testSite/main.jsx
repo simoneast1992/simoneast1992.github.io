@@ -1,4 +1,5 @@
 import React from 'react';
+import MobileNav from './mobileNav';
 import Nav from './nav';
 import Header from './header';
 import Section from './section';
@@ -14,6 +15,7 @@ class Main extends React.Component {
 	render() {
 		return (
 			<main className="w-full h-auto min-h-screen overflow-x-hidden">
+				<MobileNav />
 				<Header
 					title={data.header.title}
 					subtitle={data.header.subtitle}
