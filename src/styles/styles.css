@@ -15,6 +15,7 @@
 body {
     width: 100%;
     overflow-x: hidden;
+    overscroll-behavior: none;
 }
 
 @keyframes start-page {
@@ -158,6 +159,24 @@ h1, h3, h5, h6, button, .montserrat {
 
 .footer-logo {
     width: 300px;
+}
+
+.notification-banner {
+    z-index: 100;
+}
+
+.notification-close-icon span {
+    width: 40%;
+    height: 3px;
+    background: white;
+    top: 22px;
+    left: 14px;
+}
+
+.notification-close-icon {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 
 @keyframes background {

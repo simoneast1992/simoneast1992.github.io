@@ -1,9 +1,11 @@
-import LandingPage from './components/landing-page';
+import Loading from './components/testSite/loading';
+import Main from './components/testSite/main';
 
 function App() {
 	return (
 		<>
-			<LandingPage/>
+			<Loading />
+			<Main />
 		</>
 	);
 }

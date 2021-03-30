@@ -69,28 +69,19 @@ class Work extends React.Component {
     constructor(){
         super();
 
-        this.handleLabGallery = this.handleLabGallery.bind(this)
-        this.handleOfficeGallery = this.handleOfficeGallery.bind(this)
+        this.handleGallery = this.handleGallery.bind(this)
 
         this.state = {
             currentGallery: 1,
         }
     }
 
-    handleLabGallery = () => {
-        this.setState({currentGallery: 1});
-    }
-
-    handleOfficeGallery = () => {
-        this.setState({currentGallery: 2});
-    }
-
-    handleElecGallery = () => {
-        this.setState({currentGallery: 3});
-    }
-
-    handleMiscGallery = () => {
-        this.setState({currentGallery: 4});
+    handleGallery = (e) => {
+        if (this.state.currentGallery === e) {
+            this.setState({currentGallery: 0});
+        } else {
+            this.setState({currentGallery: e});
+        }
     }
 
     gallery1() {
@@ -309,7 +300,7 @@ class Work extends React.Component {
         return (
             <>
                 <div className="w-full h-auto flex items-center justify-center px-16 tablet-portrait:px-0" id="work">
-                    <div class="section-inner">
+                    <div className="section-inner">
                         <h3 className="text-6xl text-gray-800 mb-12 laptop-m:text-5xl iphone-x:text-4xl">{data.work.title}</h3>
                         <p className="text-lg text-gray-600">
                             {data.work.text}
@@ -317,7 +308,7 @@ class Work extends React.Component {
                     </div>
                 </div>
                 <div className="w-full h-auto flex mobile-l:flex-col">
-                    <a className="gallery w-1/4 mobile-l:w-full h-auto gallery-lab relative" onClick={this.handleLabGallery} href="#gallery1" id="gallery1">
+                    <a className="gallery w-1/4 mobile-l:w-full h-auto gallery-lab relative" href="#gallery1" onClick={() => this.handleGallery(1)} id="gallery1">
                         <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-40 flex items-center justify-center flex-col p-4">
                             <h3 className="text-white mb-4 text-3xl text-center laptop-m:text-2xl laptop-xs:text-xl tablet-portrait:text-base">Laboratory Refurbishments</h3>
                             <h4 className="text-white text-xl uppercase tracking-widest laptop-m:text-lg tablet-portrait:text-base">{this.state.currentGallery === 1 ? 'Viewing' : 'View More'}</h4>
@@ -330,7 +321,7 @@ class Work extends React.Component {
                     <span className="hidden mobile-l:block">
                         {gallery1}
                     </span>
-                    <a className="gallery w-1/4 mobile-l:w-full h-auto gallery-office relative" onClick={this.handleOfficeGallery} href="#gallery2" id="gallery2">
+                    <a className="gallery w-1/4 mobile-l:w-full h-auto gallery-office relative" onClick={() => this.handleGallery(2)} href="#gallery2" id="gallery2">
                         <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-40 flex items-center justify-center flex-col p-4">
                             <h3 className="text-white mb-4 text-3xl text-center laptop-m:text-2xl laptop-xs:text-xl tablet-portrait:text-base">Office Refurbishments</h3>
                             <h4 className="text-white text-xl uppercase tracking-widest laptop-m:text-lg tablet-portrait:text-base">{this.state.currentGallery === 2 ? 'Viewing' : 'View More'}</h4>

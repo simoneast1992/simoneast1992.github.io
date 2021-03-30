@@ -9,6 +9,7 @@ import Work from './work';
 import Clients from './clients';
 import Accreditations from './accreditations';
 import Footer from './footer';
+import Notification from './notification';
 
 import data from '../../data.json';
 
@@ -16,6 +17,7 @@ class Main extends React.Component {
 	render() {
 		return (
 			<main className="w-full h-auto min-h-screen overflow-x-hidden">
+				<Notification />
 				<MobileNav />
 				<Header
 					title={data.header.title}

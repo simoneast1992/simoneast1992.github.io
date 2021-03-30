@@ -1,5 +1,10 @@
 import React from 'react';
 
+import data from '../../data.json';
+
+import call from '../../images/call.svg';
+import email from '../../images/email.svg';
+
 class MobileNav extends React.Component {
     constructor(){
         super();
@@ -50,6 +55,14 @@ class MobileNav extends React.Component {
                         <a href="#clients" className="block w-full text-center px-4 py-8 text-3xl text-white cursor-pointer" onClick={this.handleMobileNavClose}>
                             Clients
                         </a>
+                        <span className="flex mt-8">
+                            <a href={`tel:${data.footer.phone}`} className="px-4 py-2 mr-4">
+                                <img src={call} alt="Call Icon" width="24" />
+                            </a>
+                            <a href={`mailto:${data.footer.email}`} className="px-4 py-2">
+                                <img src={email} alt="Email Icon" width="24" />
+                            </a>
+                        </span>
                     </div>
                 : null}
             </>
