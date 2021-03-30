@@ -39,6 +39,7 @@ main {
     animation-fill-mode: forwards;
     animation-delay: 2s;
     position: relative;
+    background: white;
 }
 
 h1, h3, h5, h6, button, .montserrat {
