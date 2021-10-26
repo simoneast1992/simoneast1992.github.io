@@ -123,6 +123,35 @@ h1, h3, h5, h6, button, .montserrat {
     border-color: transparent transparent #ffffff transparent;
 }
 
+.image-gallery img {
+    background: rgb(230, 230, 230);
+    cursor: pointer;
+}
+
+.carousel {
+    z-index: 200;
+}
+
+.carousel button:disabled {
+    opacity: 0.5;
+    cursor: default;
+    text-decoration: none;
+}
+
+.carousel .close-icon {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.carousel .close-icon span {
+    width: 40%;
+    height: 3px;
+    background: white;
+    top: 22px;
+    left: 14px;
+}
+
 .header-logo {
     width: 300px;
 }

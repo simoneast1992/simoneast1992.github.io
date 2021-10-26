@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Carousel from './carousel';
+
 import data from '../../data.json';
 
 import g09a from '../../images/gallery/G09/1.jpg';
@@ -66,13 +68,26 @@ import glazedf from '../../images/gallery/glazed-screens/6.jpg';
 // import glazedg from '../../images/gallery/glazed-screens/7.jpg';
 
 class Work extends React.Component {
-    constructor(){
+    constructor() {
         super();
 
         this.handleGallery = this.handleGallery.bind(this)
 
         this.state = {
             currentGallery: 1,
+            carouselVisibleA: false,
+            carouselVisibleB: false,
+            carouselVisibleC: false,
+            carouselVisibleD: false,
+            carouselVisibleE: false,
+            carouselVisibleF: false,
+            carouselVisibleG: false,
+            carouselVisibleH: false,
+            carouselVisibleI: false,
+            carouselVisibleJ: false,
+            carouselVisibleK: false,
+            carouselVisibleL: false,
+            imageNumber: 0,
         }
     }
 
@@ -94,39 +109,228 @@ class Work extends React.Component {
                             <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
-                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
-                                <img src={g09a} alt="United Utilities G09" />
-                                <img src={g09b} alt="United Utilities G09" />
-                                <img src={g09c} alt="United Utilities G09" />
+                            <div className="image-gallery w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
+                                <img
+                                    src={g09a}
+                                    alt="United Utilities G09"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleA: true});
+                                        this.setState({imageNumber: 0})
+                                    }}
+                                />
+                                <img
+                                    src={g09b}
+                                    alt="United Utilities G09"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleA: true});
+                                        this.setState({imageNumber: 1})
+                                    }}
+                                />
+                                <img
+                                    src={g09c}
+                                    alt="United Utilities G09"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleA: true});
+                                        this.setState({imageNumber: 2})
+                                    }}
+                                />
                             </div>
+                            {this.state.carouselVisibleA &&
+                                <Carousel
+                                    images={[
+                                        <img
+                                            src={g09a}
+                                            alt="United Utilities G09"
+                                        />,
+                                        <img
+                                            src={g09b}
+                                            alt="United Utilities G09"
+                                        />,
+                                        <img
+                                            src={g09c}
+                                            alt="United Utilities G09"
+                                        />
+                                    ]}
+                                    imageNumber={this.state.imageNumber}
+                                    onClose={() => this.setState({carouselVisibleA: false})}
+                                />
+                            }
                         </div>
                         <div className="section-inner padding-bottom-0">
                             <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G040 - Laboratory Refurbishment</h3>
                             <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
-                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
-                                <img src={g040a} alt="United Utilities G040" />
-                                <img src={g040b} alt="United Utilities G040" />
-                                <img src={g040c} alt="United Utilities G040" />
-                                <img src={g040d} alt="United Utilities G040" />
-                                <img src={g040e} alt="United Utilities G040" />
-                                <img src={g040f} alt="United Utilities G040" />
+                            <div className="image-gallery w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
+                                <img
+                                    src={g040a}
+                                    alt="United Utilities G040"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleB: true});
+                                        this.setState({imageNumber: 0})
+                                    }}
+                                />
+                                <img
+                                    src={g040b}
+                                    alt="United Utilities G040"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleB: true});
+                                        this.setState({imageNumber: 1})
+                                    }}
+                                />
+                                <img
+                                    src={g040c}
+                                    alt="United Utilities G040"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleB: true});
+                                        this.setState({imageNumber: 2})
+                                    }}
+                                />
+                                <img
+                                    src={g040d}
+                                    alt="United Utilities G040"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleB: true});
+                                        this.setState({imageNumber: 3})
+                                    }}
+                                />
+                                <img
+                                    src={g040e}
+                                    alt="United Utilities G040"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleB: true});
+                                        this.setState({imageNumber: 4})
+                                    }}
+                                />
+                                <img
+                                    src={g040f}
+                                    alt="United Utilities G040"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleB: true});
+                                        this.setState({imageNumber: 5})
+                                    }}
+                                />
                             </div>
+                            {this.state.carouselVisibleB &&
+                                <Carousel
+                                    images={[
+                                        <img
+                                            src={g040a}
+                                            alt="United Utilities G040"
+                                        />,
+                                        <img
+                                            src={g040b}
+                                            alt="United Utilities G040"
+                                        />,
+                                        <img
+                                            src={g040c}
+                                            alt="United Utilities G040"
+                                        />,
+                                        <img
+                                            src={g040d}
+                                            alt="United Utilities G040"
+                                        />,
+                                        <img
+                                            src={g040e}
+                                            alt="United Utilities G040"
+                                        />,
+                                        <img
+                                            src={g040f}
+                                            alt="United Utilities G040"
+                                        />
+                                    ]}
+                                    imageNumber={this.state.imageNumber}
+                                    onClose={() => this.setState({carouselVisibleB: false})}
+                                />
+                            }
                         </div>
                         <div className="section-inner padding-bottom-0">
                             <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G048 - Laboratory Refurbishment</h3>
                             <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
-                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
-                                <img src={g048a} alt="United Utilities G048" />
-                                <img src={g048b} alt="United Utilities G048" />
-                                <img src={g048c} alt="United Utilities G048" />
-                                <img src={g048d} alt="United Utilities G048" />
-                                <img src={g048e} alt="United Utilities G048" />
-                                <img src={g048f} alt="United Utilities G048" />
+                            <div className="image-gallery w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
+                                <img
+                                    src={g048a}
+                                    alt="United Utilities G048"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleC: true});
+                                        this.setState({imageNumber: 0})
+                                    }}
+                                />
+                                <img
+                                    src={g048b}
+                                    alt="United Utilities G048"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleC: true});
+                                        this.setState({imageNumber: 1})
+                                    }}
+                                />
+                                <img
+                                    src={g048c}
+                                    alt="United Utilities G048"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleC: true});
+                                        this.setState({imageNumber: 2})
+                                    }}
+                                />
+                                <img
+                                    src={g048d}
+                                    alt="United Utilities G048"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleC: true});
+                                        this.setState({imageNumber: 3})
+                                    }}
+                                />
+                                <img
+                                    src={g048e}
+                                    alt="United Utilities G048"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleC: true});
+                                        this.setState({imageNumber: 4})
+                                    }}
+                                />
+                                <img
+                                    src={g048f}
+                                    alt="United Utilities G048"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleC: true});
+                                        this.setState({imageNumber: 5})
+                                    }}
+                                />
                             </div>
+                            {this.state.carouselVisibleC &&
+                                <Carousel
+                                    images={[
+                                        <img
+                                            src={g048a}
+                                            alt="United Utilities G048"
+                                        />,
+                                        <img
+                                            src={g048b}
+                                            alt="United Utilities G048"
+                                        />,
+                                        <img
+                                            src={g048c}
+                                            alt="United Utilities G048"
+                                        />,
+                                        <img
+                                            src={g048d}
+                                            alt="United Utilities G048"
+                                        />,
+                                        <img
+                                            src={g048e}
+                                            alt="United Utilities G048"
+                                        />,
+                                        <img
+                                            src={g048f}
+                                            alt="United Utilities G048"
+                                        />
+                                    ]}
+                                    imageNumber={this.state.imageNumber}
+                                    onClose={() => this.setState({carouselVisibleC: false})}
+                                />
+                            }
                         </div>
                         <div className="section-inner padding-bottom-0">
                             <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G060 - Laboratory Refurbishment</h3>
