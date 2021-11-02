@@ -7,7 +7,7 @@ import logo from '../../images/logo-no-bg.png';
 class Header extends React.Component {
     render() {
         return (
-            <header className="header w-full flex items-stretch justify-center relative brick-bg tablet-portrait:flex-col z-40">
+            <header className="header min-h-screen w-full flex items-stretch justify-center relative brick-bg tablet-portrait:flex-col z-40">
                 <div className="w-1/2 tablet-portrait:w-full flex items-center justify-center p-10 tablet-portrait:py-16 mobile-l:p-8">
                     <div className="w-min tablet-portrait:w-3/4 mobile-l:w-full h-auto flex items-start justify-center flex-col">
                         <img src={logo} alt="SES Logo" className="mb-8 header-logo" />

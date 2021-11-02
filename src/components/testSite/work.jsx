@@ -82,11 +82,6 @@ class Work extends React.Component {
             carouselVisibleE: false,
             carouselVisibleF: false,
             carouselVisibleG: false,
-            carouselVisibleH: false,
-            carouselVisibleI: false,
-            carouselVisibleJ: false,
-            carouselVisibleK: false,
-            carouselVisibleL: false,
             imageNumber: 0,
         }
     }
@@ -106,16 +101,16 @@ class Work extends React.Component {
                     <div className="flex items-center justify-center flex-col w-full px-16 tablet-portrait:px-0">
                         <div className="section-inner padding-bottom-0">
                             <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G09 - Laboratory Refurbishment</h3>
-                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                            {/* <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <div className="image-gallery w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
+                            </p> */}
+                            <div className="image-gallery w-full h-auto grid grid-cols-3 gap-4 mobile-l:grid-cols-1">
                                 <img
                                     src={g09a}
                                     alt="United Utilities G09"
                                     onClick={() => {
                                         this.setState({carouselVisibleA: true});
-                                        this.setState({imageNumber: 0})
+                                        this.setState({imageNumber: 0});
                                     }}
                                 />
                                 <img
@@ -158,10 +153,10 @@ class Work extends React.Component {
                         </div>
                         <div className="section-inner padding-bottom-0">
                             <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G040 - Laboratory Refurbishment</h3>
-                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                            {/* <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <div className="image-gallery w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
+                            </p> */}
+                            <div className="image-gallery w-full h-auto grid grid-cols-3 gap-4 mobile-l:grid-cols-1">
                                 <img
                                     src={g040a}
                                     alt="United Utilities G040"
@@ -246,10 +241,10 @@ class Work extends React.Component {
                         </div>
                         <div className="section-inner padding-bottom-0">
                             <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G048 - Laboratory Refurbishment</h3>
-                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                            {/* <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <div className="image-gallery w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
+                            </p> */}
+                            <div className="image-gallery w-full h-auto grid grid-cols-3 gap-4 mobile-l:grid-cols-1">
                                 <img
                                     src={g048a}
                                     alt="United Utilities G048"
@@ -334,36 +329,179 @@ class Work extends React.Component {
                         </div>
                         <div className="section-inner padding-bottom-0">
                             <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G060 - Laboratory Refurbishment</h3>
-                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                            {/* <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
-                                <img src={g060a} alt="United Utilities G060" />
-                                <img src={g060b} alt="United Utilities G060" />
-                                <img src={g060c} alt="United Utilities G060" />
-                                {/* <img src={g060d} alt="United Utilities G060" /> */}
-                                <img src={g060e} alt="United Utilities G060" />
-                                <img src={g060f} alt="United Utilities G060" />
-                                {/* <img src={g060g} alt="United Utilities G060" /> */}
-                                <img src={g060h} alt="United Utilities G060" />
-                                {/* <img src={g060i} alt="United Utilities G060" /> */}
-                                <img src={g060j} alt="United Utilities G060" />
-                                {/* <img src={g060k} alt="United Utilities G060" /> */}
-                                <img src={g060l} alt="United Utilities G060" />
-                                <img src={g060m} alt="United Utilities G060" />
+                            </p> */}
+                            <div className="image-gallery w-full h-auto grid grid-cols-3 gap-4 mobile-l:grid-cols-1">
+                                <img
+                                    src={g060a}
+                                    alt="United Utilities G060"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleD: true});
+                                        this.setState({imageNumber: 0})
+                                    }}
+                                />
+                                <img
+                                    src={g060b}
+                                    alt="United Utilities G060"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleD: true});
+                                        this.setState({imageNumber: 1})
+                                    }}
+                                />
+                                <img
+                                    src={g060c}
+                                    alt="United Utilities G060"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleD: true});
+                                        this.setState({imageNumber: 2})
+                                    }}
+                                />
+                                <img
+                                    src={g060e}
+                                    alt="United Utilities G060"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleD: true});
+                                        this.setState({imageNumber: 3})
+                                    }}
+                                />
+                                <img
+                                    src={g060f}
+                                    alt="United Utilities G060"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleD: true});
+                                        this.setState({imageNumber: 4})
+                                    }}
+                                />
+                                <img
+                                    src={g060h}
+                                    alt="United Utilities G060"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleD: true});
+                                        this.setState({imageNumber: 5})
+                                    }}
+                                />
+                                <img
+                                    src={g060j}
+                                    alt="United Utilities G060"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleD: true});
+                                        this.setState({imageNumber: 6})
+                                    }}
+                                />
+                                <img
+                                    src={g060l}
+                                    alt="United Utilities G060"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleD: true});
+                                        this.setState({imageNumber: 7})
+                                    }}
+                                />
+                                <img
+                                    src={g060m}
+                                    alt="United Utilities G060"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleD: true});
+                                        this.setState({imageNumber: 8})
+                                    }}
+                                />
                             </div>
+                            {this.state.carouselVisibleD &&
+                                <Carousel
+                                    images={[
+                                        <img
+                                            src={g060a}
+                                            alt="United Utilities G060"
+                                        />,
+                                        <img
+                                            src={g060b}
+                                            alt="United Utilities G060"
+                                        />,
+                                        <img
+                                            src={g060c}
+                                            alt="United Utilities G060"
+                                        />,
+                                        <img
+                                            src={g060e}
+                                            alt="United Utilities G060"
+                                        />,
+                                        <img
+                                            src={g060f}
+                                            alt="United Utilities G060"
+                                        />,
+                                        <img
+                                            src={g060h}
+                                            alt="United Utilities G060"
+                                        />,
+                                        <img
+                                            src={g060j}
+                                            alt="United Utilities G060"
+                                        />,
+                                        <img
+                                            src={g060l}
+                                            alt="United Utilities G060"
+                                        />,
+                                        <img
+                                            src={g060m}
+                                            alt="United Utilities G060"
+                                        />
+                                    ]}
+                                    imageNumber={this.state.imageNumber}
+                                    onClose={() => this.setState({carouselVisibleD: false})}
+                                />
+                            }
                         </div>
                         <div className="section-inner">
                             <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G090 - Laboratory Refurbishment</h3>
-                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                            {/* <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
-                                <img src={g090a} alt="United Utilities G090" />
-                                <img src={g090b} alt="United Utilities G090" />
-                                {/* <img src={g090c} alt="United Utilities G090" /> */}
-                                <img src={g090d} alt="United Utilities G090" />
+                            </p> */}
+                            <div className="image-gallery w-full h-auto grid grid-cols-3 gap-4 mobile-l:grid-cols-1">
+                                <img
+                                    src={g090a}
+                                    alt="United Utilities G090"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleE: true});
+                                        this.setState({imageNumber: 0})
+                                    }}
+                                />
+                                <img
+                                    src={g090b}
+                                    alt="United Utilities G090"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleE: true});
+                                        this.setState({imageNumber: 1})
+                                    }}
+                                />
+                                <img
+                                    src={g090d}
+                                    alt="United Utilities G090"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleE: true});
+                                        this.setState({imageNumber: 2})
+                                    }}
+                                />
                             </div>
+                            {this.state.carouselVisibleE &&
+                                <Carousel
+                                    images={[
+                                        <img
+                                            src={g090a}
+                                            alt="United Utilities G090"
+                                        />,
+                                        <img
+                                            src={g090b}
+                                            alt="United Utilities G090"
+                                        />,
+                                        <img
+                                            src={g090d}
+                                            alt="United Utilities G090"
+                                        />
+                                    ]}
+                                    imageNumber={this.state.imageNumber}
+                                    onClose={() => this.setState({carouselVisibleE: false})}
+                                />
+                            }
                         </div>
                     </div>
                 </div>
@@ -378,50 +516,267 @@ class Work extends React.Component {
                     <div className="flex items-center justify-center flex-col w-full">
                         <div className="section-inner padding-bottom-0">
                             <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">Uclan Whitehaven - Office Refurbishment</h3>
-                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                            {/* <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
-                                <img src={uclana} alt="Uclan Whitehaven Office Refurbishment" />
-                                <img src={uclanb} alt="Uclan Whitehaven Office Refurbishment" />
-                                <img src={uclanc} alt="Uclan Whitehaven Office Refurbishment" />
-                                <img src={ucland} alt="Uclan Whitehaven Office Refurbishment" />
-                                <img src={uclane} alt="Uclan Whitehaven Office Refurbishment" />
-                                <img src={uclanf} alt="Uclan Whitehaven Office Refurbishment" />
-                                <img src={uclang} alt="Uclan Whitehaven Office Refurbishment" />
-                                <img src={uclanh} alt="Uclan Whitehaven Office Refurbishment" />
-                                <img src={uclani} alt="Uclan Whitehaven Office Refurbishment" />
+                            </p> */}
+                            <div className="image-gallery w-full h-auto grid grid-cols-3 gap-4 mobile-l:grid-cols-1">
+                                <img
+                                    src={uclana}
+                                    alt="Uclan Whitehaven Office Refurbishment"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleF: true});
+                                        this.setState({imageNumber: 0})
+                                    }}
+                                />
+                                <img
+                                    src={uclanb}
+                                    alt="Uclan Whitehaven Office Refurbishment"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleF: true});
+                                        this.setState({imageNumber: 1})
+                                    }}
+                                />
+                                <img
+                                    src={uclanc}
+                                    alt="Uclan Whitehaven Office Refurbishment"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleF: true});
+                                        this.setState({imageNumber: 2})
+                                    }}
+                                />
+                                <img
+                                    src={ucland}
+                                    alt="Uclan Whitehaven Office Refurbishment"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleF: true});
+                                        this.setState({imageNumber: 3})
+                                    }}
+                                />
+                                <img
+                                    src={uclane}
+                                    alt="Uclan Whitehaven Office Refurbishment"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleF: true});
+                                        this.setState({imageNumber: 4})
+                                    }}
+                                />
+                                <img
+                                    src={uclanf}
+                                    alt="Uclan Whitehaven Office Refurbishment"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleF: true});
+                                        this.setState({imageNumber: 5})
+                                    }}
+                                />
+                                <img
+                                    src={uclang}
+                                    alt="Uclan Whitehaven Office Refurbishment"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleF: true});
+                                        this.setState({imageNumber: 6})
+                                    }}
+                                />
+                                <img
+                                    src={uclanh}
+                                    alt="Uclan Whitehaven Office Refurbishment"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleF: true});
+                                        this.setState({imageNumber: 7})
+                                    }}
+                                />
+                                <img
+                                    src={uclani}
+                                    alt="Uclan Whitehaven Office Refurbishment"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleF: true});
+                                        this.setState({imageNumber: 8})
+                                    }}
+                                />
                             </div>
+                            {this.state.carouselVisibleF &&
+                                <Carousel
+                                    images={[
+                                        <img
+                                            src={uclana}
+                                            alt="Uclan Whitehaven Office Refurbishment"
+                                        />,
+                                        <img
+                                            src={uclanb}
+                                            alt="Uclan Whitehaven Office Refurbishment"
+                                        />,
+                                        <img
+                                            src={uclanc}
+                                            alt="Uclan Whitehaven Office Refurbishment"
+                                        />,
+                                        <img
+                                            src={ucland}
+                                            alt="Uclan Whitehaven Office Refurbishment"
+                                        />,
+                                        <img
+                                            src={uclane}
+                                            alt="Uclan Whitehaven Office Refurbishment"
+                                        />,
+                                        <img
+                                            src={uclanf}
+                                            alt="Uclan Whitehaven Office Refurbishment"
+                                        />,
+                                        <img
+                                            src={uclang}
+                                            alt="Uclan Whitehaven Office Refurbishment"
+                                        />,
+                                        <img
+                                            src={uclanh}
+                                            alt="Uclan Whitehaven Office Refurbishment"
+                                        />,
+                                        <img
+                                            src={uclani}
+                                            alt="Uclan Whitehaven Office Refurbishment"
+                                        />
+                                    ]}
+                                    imageNumber={this.state.imageNumber}
+                                    onClose={() => this.setState({carouselVisibleF: false})}
+                                />
+                            }
                         </div>
                         <div className="section-inner padding-bottom-0">
                             <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">Stowe - Office Refurbishment</h3>
-                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                            {/* <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
-                                <img src={stowea} alt="Stowe Office Refurbishment" />
-                                {/* <img src={stoweb} alt="Stowe Office Refurbishment" /> */}
-                                <img src={stowec} alt="Stowe Office Refurbishment" />
-                                <img src={stowed} alt="Stowe Office Refurbishment" />
-                                <img src={stowee} alt="Stowe Office Refurbishment" />
-                                <img src={stowef} alt="Stowe Office Refurbishment" />
-                                <img src={stoweg} alt="Stowe Office Refurbishment" />
+                            </p> */}
+                            <div className="image-gallery w-full h-auto grid grid-cols-3 gap-4 mobile-l:grid-cols-1">
+                                <img
+                                    src={stowea}
+                                    alt="Stowe Office Refurbishment"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleG: true});
+                                        this.setState({imageNumber: 0})
+                                    }}
+                                />
+                                <img
+                                    src={stowec}
+                                    alt="Stowe Office Refurbishment"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleG: true});
+                                        this.setState({imageNumber: 1})
+                                    }}
+                                />
+                                <img
+                                    src={stowed}
+                                    alt="Stowe Office Refurbishment"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleG: true});
+                                        this.setState({imageNumber: 2})
+                                    }}
+                                />
+                                <img
+                                    src={stowee}
+                                    alt="Stowe Office Refurbishment"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleG: true});
+                                        this.setState({imageNumber: 3})
+                                    }}
+                                />
+                                <img
+                                    src={stowef}
+                                    alt="Stowe Office Refurbishment"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleG: true});
+                                        this.setState({imageNumber: 4})
+                                    }}
+                                />
+                                <img
+                                    src={stoweg}
+                                    alt="Stowe Office Refurbishment"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleG: true});
+                                        this.setState({imageNumber: 5})
+                                    }}
+                                />
                             </div>
+                            {this.state.carouselVisibleG &&
+                                <Carousel
+                                    images={[
+                                        <img
+                                            src={stowea}
+                                            alt="Stowe Office Refurbishment"
+                                        />,
+                                        <img
+                                            src={stowec}
+                                            alt="Stowe Office Refurbishment"
+                                        />,
+                                        <img
+                                            src={stowed}
+                                            alt="Stowe Office Refurbishment"
+                                        />,
+                                        <img
+                                            src={stowee}
+                                            alt="Stowe Office Refurbishment"
+                                        />,
+                                        <img
+                                            src={stowef}
+                                            alt="Stowe Office Refurbishment"
+                                        />,
+                                        <img
+                                            src={stoweg}
+                                            alt="Stowe Office Refurbishment"
+                                        />
+                                    ]}
+                                    imageNumber={this.state.imageNumber}
+                                    onClose={() => this.setState({carouselVisibleG: false})}
+                                />
+                            }
                         </div>
                         <div className="section-inner">
                             <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">Glazed Screens - Office Refurbishment</h3>
-                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                            {/* <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
-                                <img src={glazeda} alt="Glazed Screens Office Refurbishment" />
-                                {/* <img src={glazedb} alt="Glazed Screens Office Refurbishment" /> */}
-                                {/* <img src={glazedc} alt="Glazed Screens Office Refurbishment" /> */}
-                                <img src={glazedd} alt="Glazed Screens Office Refurbishment" />
-                                {/* <img src={glazede} alt="Glazed Screens Office Refurbishment" /> */}
-                                <img src={glazedf} alt="Glazed Screens Office Refurbishment" />
-                                {/* <img src={glazedg} alt="Glazed Screens Office Refurbishment" /> */}
+                            </p> */}
+                            <div className="image-gallery w-full h-auto grid grid-cols-3 gap-4 mobile-l:grid-cols-1">
+                                <img
+                                    src={glazeda}
+                                    alt="Glazed Screens Office Refurbishment"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleH: true});
+                                        this.setState({imageNumber: 0})
+                                    }}
+                                />
+                                <img
+                                    src={glazedd}
+                                    alt="Glazed Screens Office Refurbishment"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleH: true});
+                                        this.setState({imageNumber: 1})
+                                    }}
+                                />
+                                <img
+                                    src={glazedf}
+                                    alt="Glazed Screens Office Refurbishment"
+                                    onClick={() => {
+                                        this.setState({carouselVisibleH: true});
+                                        this.setState({imageNumber: 2})
+                                    }}
+                                />
                             </div>
+                            {this.state.carouselVisibleH &&
+                                <Carousel
+                                    images={[
+                                        <img
+                                            src={glazeda}
+                                            alt="Glazed Screens Office Refurbishment"
+                                        />,
+                                        <img
+                                            src={glazedd}
+                                            alt="Glazed Screens Office Refurbishment"
+                                        />,
+                                        <img
+                                            src={glazedf}
+                                            alt="Glazed Screens Office Refurbishment"
+                                        />
+                                    ]}
+                                    imageNumber={this.state.imageNumber}
+                                    onClose={() => this.setState({carouselVisibleH: false})}
+                                />
+                            }
                         </div>
                     </div>
                 </div>
@@ -436,10 +791,10 @@ class Work extends React.Component {
                     <div className="flex items-center justify-center flex-col w-full">
                         <div className="section-inner padding-bottom-0">
                             <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G060 - Elec Refurbishment</h3>
-                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                            {/* <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
+                            </p> */}
+                            <div className="w-full h-auto grid grid-cols-3 gap-4 mobile-l:grid-cols-1">
                                 <img src={g09a} alt="United Utilities G09" />
                                 <img src={g09b} alt="United Utilities G09" />
                                 <img src={g09c} alt="United Utilities G09" />
@@ -447,10 +802,10 @@ class Work extends React.Component {
                         </div>
                         <div className="section-inner">
                             <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G090 - Laboratory Refurbishment</h3>
-                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                            {/* <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
+                            </p> */}
+                            <div className="w-full h-auto grid grid-cols-3 gap-4 mobile-l:grid-cols-1">
                                 <img src={g09a} alt="United Utilities G09" />
                                 <img src={g09b} alt="United Utilities G09" />
                                 <img src={g09c} alt="United Utilities G09" />
@@ -469,10 +824,10 @@ class Work extends React.Component {
                     <div className="flex items-center justify-center flex-col w-full">
                         <div className="section-inner padding-bottom-0">
                             <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G09 - Misc Refurbishment</h3>
-                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                            {/* <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
+                            </p> */}
+                            <div className="w-full h-auto grid grid-cols-3 gap-4 mobile-l:grid-cols-1">
                                 <img src={g09a} alt="United Utilities G09" />
                                 <img src={g09b} alt="United Utilities G09" />
                                 <img src={g09c} alt="United Utilities G09" />
@@ -480,10 +835,10 @@ class Work extends React.Component {
                         </div>
                         <div className="section-inner">
                             <h3 className="text-4xl text-gray-800 mb-12 iphone-x:mb-8 iphone-x:text-3xl">G09 - Laboratory Refurbishment</h3>
-                            <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
+                            {/* <p className="text-lg text-gray-600 mb-12 iphone-x:mb-8">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <div className="w-full h-auto grid grid-cols-3 gap-6 mobile-l:grid-cols-1 mobile-l:gap-4">
+                            </p> */}
+                            <div className="w-full h-auto grid grid-cols-3 gap-4 mobile-l:grid-cols-1">
                                 <img src={g09a} alt="United Utilities G09" />
                                 <img src={g09b} alt="United Utilities G09" />
                                 <img src={g09c} alt="United Utilities G09" />

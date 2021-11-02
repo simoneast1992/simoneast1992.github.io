@@ -11,7 +11,9 @@ class Carousel extends React.Component {
     render () {
         return (
             <div className="carousel fixed flex inset-0 justify-center items-center bg-black bg-opacity-95">
-                <div className="close-button w-20 h-20 p-4 flex items-center justify-center cursor-pointer absolute top-0 right-0 shadow-md" onClick={this.props.onClose}>
+                <div
+                    className="close-button w-20 h-20 p-4 flex items-center justify-center cursor-pointer absolute top-0 right-0 shadow-md" onClick={this.props.onClose}
+                >
                     <div className="close-icon relative bg-red-500">
                         <span className="transform rotate-45 absolute"/>
                         <span className="transform -rotate-45 absolute"/>
@@ -19,7 +21,7 @@ class Carousel extends React.Component {
                 </div>
                 <span className="flex flex-col items-center relative">
                     {this.props.images[this.state.image]}
-                    <span className="w-full bg-gray-800 text-white flex justify-between items-center pt-2 pb-1 px-2">
+                    <span className="w-full bg-gray-800 text-white flex justify-between items-center pt-2 pb-1 px-2 mt-2">
                         <button
                             disabled={this.state.image === 0}
                             className="border-none p-3 hover:underline focus:outline-none"
