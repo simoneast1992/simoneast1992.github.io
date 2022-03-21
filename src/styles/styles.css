@@ -9,7 +9,7 @@
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -27,7 +27,8 @@ main {
 }
 
 h1, h3, h5, h6, button, .montserrat {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Arial', sans-serif;
+	font-weight: 700 !important;
 }
 
 .header {
