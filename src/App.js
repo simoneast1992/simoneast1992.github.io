@@ -1,11 +1,20 @@
-import Loading from './components/testSite/loading';
+import React, { useEffect } from 'react';
+
 import Main from './components/testSite/main';
 
 function App() {
+
+	useEffect(() => {
+		test()
+	});
+
+	const test = () => {
+		return <Main />
+	}
+
 	return (
 		<>
-			<Loading />
-			<Main />
+			{test()}
 		</>
 	);
 }

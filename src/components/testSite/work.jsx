@@ -4,68 +4,68 @@ import Carousel from './carousel';
 
 import data from '../../data.json';
 
-import g09a from '../../images/gallery/G09/1.jpg';
-import g09b from '../../images/gallery/G09/2.jpg';
-import g09c from '../../images/gallery/G09/3.jpg';
+import g09a from '../../images/gallery/G09/1.webp';
+import g09b from '../../images/gallery/G09/2.webp';
+import g09c from '../../images/gallery/G09/3.webp';
 
-import g040a from '../../images/gallery/G040/1.jpg';
-import g040b from '../../images/gallery/G040/2.jpg';
-import g040c from '../../images/gallery/G040/3.jpg';
-import g040d from '../../images/gallery/G040/4.jpg';
-import g040e from '../../images/gallery/G040/5.jpg';
-import g040f from '../../images/gallery/G040/6.jpg';
+import g040a from '../../images/gallery/G040/1.webp';
+import g040b from '../../images/gallery/G040/2.webp';
+import g040c from '../../images/gallery/G040/3.webp';
+import g040d from '../../images/gallery/G040/4.webp';
+import g040e from '../../images/gallery/G040/5.webp';
+import g040f from '../../images/gallery/G040/6.webp';
 
-import g048a from '../../images/gallery/G048/1.jpg';
-import g048b from '../../images/gallery/G048/2.jpg';
-import g048c from '../../images/gallery/G048/3.jpg';
-import g048d from '../../images/gallery/G048/4.jpg';
-import g048e from '../../images/gallery/G048/5.jpg';
-import g048f from '../../images/gallery/G048/6.jpg';
+import g048a from '../../images/gallery/G048/1.webp';
+import g048b from '../../images/gallery/G048/2.webp';
+import g048c from '../../images/gallery/G048/3.webp';
+import g048d from '../../images/gallery/G048/4.webp';
+import g048e from '../../images/gallery/G048/5.webp';
+import g048f from '../../images/gallery/G048/6.webp';
 
-import g060a from '../../images/gallery/G060/1.jpg';
-import g060b from '../../images/gallery/G060/2.jpg';
-import g060c from '../../images/gallery/G060/3.jpg';
-// import g060d from '../../images/gallery/G060/4.jpg';
-import g060e from '../../images/gallery/G060/5.jpg';
-import g060f from '../../images/gallery/G060/6.jpg';
-// import g060g from '../../images/gallery/G060/7.jpg';
-import g060h from '../../images/gallery/G060/8.jpg';
-// import g060i from '../../images/gallery/G060/9.jpg';
-import g060j from '../../images/gallery/G060/10.jpg';
-// import g060k from '../../images/gallery/G060/11.jpg';
-import g060l from '../../images/gallery/G060/12.jpg';
-import g060m from '../../images/gallery/G060/13.jpg';
+import g060a from '../../images/gallery/G060/1.webp';
+import g060b from '../../images/gallery/G060/2.webp';
+import g060c from '../../images/gallery/G060/3.webp';
+// import g060d from '../../images/gallery/G060/4.webp';
+import g060e from '../../images/gallery/G060/5.webp';
+import g060f from '../../images/gallery/G060/6.webp';
+// import g060g from '../../images/gallery/G060/7.webp';
+import g060h from '../../images/gallery/G060/8.webp';
+// import g060i from '../../images/gallery/G060/9.webp';
+import g060j from '../../images/gallery/G060/10.webp';
+// import g060k from '../../images/gallery/G060/11.webp';
+import g060l from '../../images/gallery/G060/12.webp';
+import g060m from '../../images/gallery/G060/13.webp';
 
-import g090a from '../../images/gallery/G090/1.jpg';
-import g090b from '../../images/gallery/G090/2.jpg';
-// import g090c from '../../images/gallery/G090/3.jpg';
-import g090d from '../../images/gallery/G090/4.jpg';
+import g090a from '../../images/gallery/G090/1.webp';
+import g090b from '../../images/gallery/G090/2.webp';
+// import g090c from '../../images/gallery/G090/3.webp';
+import g090d from '../../images/gallery/G090/4.webp';
 
-import uclana from '../../images/gallery/uclan-whitehaven/1.jpg';
-import uclanb from '../../images/gallery/uclan-whitehaven/2.jpg';
-import uclanc from '../../images/gallery/uclan-whitehaven/3.jpg';
-import ucland from '../../images/gallery/uclan-whitehaven/4.jpg';
-import uclane from '../../images/gallery/uclan-whitehaven/5.jpg';
-import uclanf from '../../images/gallery/uclan-whitehaven/6.jpg';
-import uclang from '../../images/gallery/uclan-whitehaven/7.jpg';
-import uclanh from '../../images/gallery/uclan-whitehaven/8.jpg';
-import uclani from '../../images/gallery/uclan-whitehaven/9.jpg';
+import uclana from '../../images/gallery/uclan-whitehaven/1.webp';
+import uclanb from '../../images/gallery/uclan-whitehaven/2.webp';
+import uclanc from '../../images/gallery/uclan-whitehaven/3.webp';
+import ucland from '../../images/gallery/uclan-whitehaven/4.webp';
+import uclane from '../../images/gallery/uclan-whitehaven/5.webp';
+import uclanf from '../../images/gallery/uclan-whitehaven/6.webp';
+import uclang from '../../images/gallery/uclan-whitehaven/7.webp';
+import uclanh from '../../images/gallery/uclan-whitehaven/8.webp';
+import uclani from '../../images/gallery/uclan-whitehaven/9.webp';
 
-import stowea from '../../images/gallery/stowe/1.jpg';
-// import stoweb from '../../images/gallery/stowe/2.jpg';
-import stowec from '../../images/gallery/stowe/3.jpg';
-import stowed from '../../images/gallery/stowe/4.jpg';
-import stowee from '../../images/gallery/stowe/5.jpg';
-import stowef from '../../images/gallery/stowe/6.jpg';
-import stoweg from '../../images/gallery/stowe/7.jpg';
+import stowea from '../../images/gallery/stowe/1.webp';
+// import stoweb from '../../images/gallery/stowe/2.webp';
+import stowec from '../../images/gallery/stowe/3.webp';
+import stowed from '../../images/gallery/stowe/4.webp';
+import stowee from '../../images/gallery/stowe/5.webp';
+import stowef from '../../images/gallery/stowe/6.webp';
+import stoweg from '../../images/gallery/stowe/7.webp';
 
-import glazeda from '../../images/gallery/glazed-screens/1.jpg';
-// import glazedb from '../../images/gallery/glazed-screens/2.jpg';
-// import glazedc from '../../images/gallery/glazed-screens/3.jpg';
-import glazedd from '../../images/gallery/glazed-screens/4.jpg';
-// import glazede from '../../images/gallery/glazed-screens/5.jpg';
-import glazedf from '../../images/gallery/glazed-screens/6.jpg';
-// import glazedg from '../../images/gallery/glazed-screens/7.jpg';
+import glazeda from '../../images/gallery/glazed-screens/1.webp';
+// import glazedb from '../../images/gallery/glazed-screens/2.webp';
+// import glazedc from '../../images/gallery/glazed-screens/3.webp';
+import glazedd from '../../images/gallery/glazed-screens/4.webp';
+// import glazede from '../../images/gallery/glazed-screens/5.webp';
+import glazedf from '../../images/gallery/glazed-screens/6.webp';
+// import glazedg from '../../images/gallery/glazed-screens/7.webp';
 
 class Work extends React.Component {
     constructor() {

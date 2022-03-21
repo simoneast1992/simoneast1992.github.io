@@ -20,24 +20,8 @@ body {
     overscroll-behavior: none;
 }
 
-@keyframes start-page {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 main {
     width: 100%;
-    opacity: 0;
-    animation-name: start-page;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-delay: 2s;
     position: relative;
     background: white;
 }
@@ -96,22 +80,22 @@ h1, h3, h5, h6, button, .montserrat {
 }
 
 .gallery-lab {
-    background-image: url(../images/lab.jpg);
+    background-image: url(../images/lab.webp);
     background-position: center;
 }
 
 .gallery-office {
-    background-image: url(../images/office.jpg);
+    background-image: url(../images/office.webp);
     background-position: center;
 }
 
 .gallery-elec {
-    background-image: url(../images/elec.jpg);
+    background-image: url(../images/elec.webp);
     background-position: center;
 }
 
 .gallery-misc {
-    background-image: url(../images/misc.jpg);
+    background-image: url(../images/misc.webp);
     background-position: center;
 }
 
@@ -212,27 +196,29 @@ h1, h3, h5, h6, button, .montserrat {
 }
 
 @keyframes background {
-    0% {
-        background-image: url(../images/lab.jpg);
+    0%, 28%, 100% {
+        background-image: url(../images/lab.webp);
     }
-    28% {
-        background-image: url(../images/lab.jpg);
+    33%, 62% {
+        background-image: url(../images/misc.webp);
     }
-    33% {
-        background-image: url(../images/misc.jpg);
+    67%, 95% {
+        background-image: url(../images/office.webp);
     }
-    62% {
-        background-image: url(../images/misc.jpg);
-    }
-    67% {
-        background-image: url(../images/office.jpg);
-    }
-    95% {
-        background-image: url(../images/office.jpg);
-    }
-    100% {
-        background-image: url(../images/lab.jpg);
-    }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	@keyframes background {
+		0%, 28%, 100% {
+			background-image: url(../images/lab.jpg);
+		}
+		33%, 62% {
+			background-image: url(../images/misc.jpg);
+		}
+		67%, 95% {
+			background-image: url(../images/office.jpg);
+		}
+	}
 }
 
 @media only screen and (max-width: 1920px) {
