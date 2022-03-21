@@ -138,6 +138,7 @@ h1, h3, h5, h6, button, .montserrat {
 
 .header-logo {
     width: 300px;
+	height: 113px;
 }
 
 .down-arrow {
@@ -257,6 +258,7 @@ h1, h3, h5, h6, button, .montserrat {
 
     .header-logo {
         width: 250px;
+		height: 94px;
     }
 }
 
@@ -267,6 +269,7 @@ h1, h3, h5, h6, button, .montserrat {
 
     .header-logo {
         width: 200px;
+		height: 75px;
     }
 
     .down-arrow {
@@ -340,6 +343,7 @@ h1, h3, h5, h6, button, .montserrat {
 @media only screen and (max-width: 600px) {
     .header-logo {
         width: 150px;
+		height: 56px;
     }
 
     .section-inner {
