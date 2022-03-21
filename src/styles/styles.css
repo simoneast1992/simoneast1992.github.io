@@ -27,8 +27,7 @@ main {
 }
 
 h1, h3, h5, h6, button, .montserrat {
-    font-family: 'Arial', sans-serif;
-	font-weight: 700 !important;
+    font-family: 'Arial Black', sans-serif;
 }
 
 .header {
