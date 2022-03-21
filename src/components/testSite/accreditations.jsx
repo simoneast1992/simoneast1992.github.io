@@ -1,7 +1,7 @@
 import React from 'react';
 
 import has from '../../images/accreditations/has.webp';
-import nic from '../../images/accreditations/niceic.png';
+import nic from '../../images/accreditations/niceic.webp';
 
 class Accreditations extends React.Component {
     render() {

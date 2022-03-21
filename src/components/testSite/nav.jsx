@@ -1,7 +1,7 @@
 import React from 'react';
 import data from '../../data.json';
 
-import logo from '../../images/logo-no-bg.png';
+import logo from '../../images/logo-no-bg.webp';
 import call from '../../images/call.svg';
 import email from '../../images/email.svg';
 import callB from '../../images/call-b.svg';

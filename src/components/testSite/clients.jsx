@@ -1,6 +1,6 @@
 import React from 'react';
 
-import emcor from '../../images/emcor.png';
+import emcor from '../../images/emcor.webp';
 import united from '../../images/united-utilities.svg';
 
 class Clients extends React.Component {

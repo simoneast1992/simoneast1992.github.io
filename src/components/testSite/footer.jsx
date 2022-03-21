@@ -1,7 +1,7 @@
 import React from 'react';
 import data from '../../data.json';
 
-import logo from '../../images/logo-white.png';
+import logo from '../../images/logo-white.webp';
 
 class Footer extends React.Component {
     render() {

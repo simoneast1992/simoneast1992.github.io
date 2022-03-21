@@ -2,7 +2,7 @@ import React from 'react';
 import HeaderForm from './headerForm';
 
 import arrow from '../../images/arrow.svg';
-import logo from '../../images/logo-no-bg.png';
+import logo from '../../images/logo-no-bg.webp';
 
 class Header extends React.Component {
     render() {
